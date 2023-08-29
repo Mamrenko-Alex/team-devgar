@@ -1,0 +1,9 @@
+.class1 {
+  color: aliceblue;
+}
+
+@media screen {
+  .class1 {
+    width: 100%;
+  }
+}
