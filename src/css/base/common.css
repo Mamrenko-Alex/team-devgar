@@ -7,6 +7,10 @@ body {
   background-color: var(--white);
 }
 
+.anchor {
+  cursor: pointer;
+}
+
 .container {
   width: 1280px;
   margin-left: auto;
