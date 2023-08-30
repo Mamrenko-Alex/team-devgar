@@ -79,6 +79,7 @@ img {
   margin: 0 auto;
 }
 
+
 .reviews {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -124,6 +125,7 @@ img {
 } */
 
 .reviews__card {
+  width: 300px;
   height: 278px;
   padding: 20px 20px 40px 20px;
   border-radius: 16px;
@@ -213,12 +215,11 @@ img {
 
   .reviews__list {
     display: flex;
-    gap: 32px;
   }
 
   .reviews__item {
     /* width: calc((100% - 32px) / 2); */
-    position: relative;
+    
   }
 
   /* .reviews__list li:nth-child(3) {
@@ -226,6 +227,7 @@ img {
   } */
 
   .reviews__card {
+    width: 320px;
     height: 326px;
     padding: 32px 16px 40px 16px;
     border-radius: 30px;
@@ -271,9 +273,9 @@ img {
     margin-right: auto;
   }
 
-  .reviews__item {
+  /* .reviews__item {
     width: calc((100% - 2*32px) / 3);
-  }
+  } */
 
   /* .reviews__list li:nth-child(3) {
     display: block;
