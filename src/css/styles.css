@@ -6,8 +6,9 @@
 */
 @import url('./base/reset.css');
 @import url('./base/common.css');
+@import url('./layout/hero.css');
 
-root {
+:root {
   /* COLORS */
   --black: #121417;
   --green: #4dc274;
@@ -15,8 +16,10 @@ root {
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #ffffff;
+  --focus-color: #38ae5f;
   /* FONTS */
   --primary-font: 'Manrope', sans-serif;
+  --accent-color: #bee8cc;
   --transparent-black: rgba(18, 20, 23, 0.5);
   --transparent-white: rgba(255, 255, 255, 0.7);
 }
