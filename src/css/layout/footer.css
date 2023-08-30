@@ -1,0 +1,138 @@
+.footer {
+  background: #121417;
+  width: 100%;
+}
+
+.footer_container {
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    justify-content: space-between;
+    column-gap: 300px;
+    padding: 64px 0;
+}
+
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_wrapper-logo {
+  text-decoration: none;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-span {
+  color: #4dc274;
+}
+
+.footer_address {
+  margin-top: 32px;
+}
+.footer_address_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.footer_address_list_item_text {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.footer_address_list_item_link {
+  text-decoration: none;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+}
+
+.footer_nav_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer_nav_list_item_link {
+  text-decoration: none;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.footer_social_list {
+  list-style: none;
+  display: flex;
+  column-gap: 12px;
+}
+.footer_social_list_item {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #fff;
+}
+
+.footer_bottom_line {
+  width: 1024px;
+  margin: 0 auto;
+  stroke-width: 1px;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+
+.footer_bottom_list_item_text{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+.footer_bottom_list_item-link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: right;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+.footer_bottom_list{
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 23px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-left{
+    display: flex;
+    column-gap: 230px;
+}
+
+.item-ref{
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
