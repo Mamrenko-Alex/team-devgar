@@ -4,9 +4,24 @@
   | default @import url()
   |============================
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap');
 
 @import url('./base/reset.css');
 @import url('./layout/footer.css');
-:root {
+@import url('./base/common.css');
+
+root {
+  /* COLORS */
+  --black: #121417;
+  --green: #4dc274;
+  --green-linear: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #ffffff;
+  /* FONTS */
+  --primary-font: 'Manrope', sans-serif;
+  --transparent-black: rgba(18, 20, 23, 0.5);
+  --transparent-white: rgba(255, 255, 255, 0.7);
+
 }
