@@ -2,23 +2,20 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 335px;
-  /* FIXME add css-vars */
-  background: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
+  background: linear-gradient(84.6deg, var(--green) 2.25%, #bee8cc 131.25%);
   padding-top: 40px;
   padding-bottom: 65px;
   border-radius: 16px;
 }
 
-/* FIXME move to vars later */
-/* FIXME - install Manrope font */
 .proposal_cta {
-  font-family: Manrope;
+  font-family: var(--primary-font);
   font-size: 38px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0em;
   text-align: left;
-  color: #ffffff;
+  color: var(--white);
 
   display: block;
   margin-left: 20px;
@@ -54,13 +51,13 @@
   border-radius: 16px;
   transform: rotate(-9deg);
   transform-origin: center;
-  background: #d4fde1;
+  background: var(--light-green);
   z-index: 4;
 }
 
 .card_front {
   position: relative;
-  background: #ffffff;
+  background: var(--white);
   z-index: 5;
   width: 295px;
   height: 408px;
@@ -71,7 +68,7 @@
 }
 
 .proposal_title {
-  font-family: Manrope;
+  /* font-family: Manrope; */
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -80,7 +77,7 @@
   margin-bottom: 20px;
 }
 .proposal_text {
-  font-family: Manrope;
+  /* font-family: Manrope; */
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -88,6 +85,7 @@
   text-align: left;
   display: block;
   margin-left: 8px;
+  max-width: 87%;
 }
 .proposal_list {
   display: flex;
@@ -97,9 +95,10 @@
 }
 .proposal_list_item {
   display: flex;
+  align-items: center;
 }
 .proposal_button {
-  background-color: #4dc274;
+  background-color: var(--green);
   max-width: 255px;
   text-align: center;
   padding-top: 14px;
@@ -108,7 +107,7 @@
 }
 .proposal_link {
   color: #ffffff;
-  font-family: Manrope;
+  /* font-family: Manrope; */
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -117,6 +116,14 @@
 
 .proposal_books {
   display: none;
+}
+
+.tick_icon {
+  display: block;
+  /* vertical-align: middle; */
+
+  width: 20px;
+  height: 20px;
 }
 /* ------------------- */
 
@@ -128,7 +135,7 @@
     border-radius: 16px;
   }
   .proposal_cta {
-    font-family: Manrope;
+    /* font-family: Manrope; */
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
@@ -163,7 +170,7 @@
     border-radius: 30px;
   }
   .proposal_title {
-    font-family: Manrope;
+    /* font-family: Manrope; */
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -172,23 +179,24 @@
     margin-bottom: 32px;
   }
   .proposal_text {
-    font-family: Manrope;
+    /* font-family: Manrope; */
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.02em;
     text-align: left;
     margin-left: 16px;
+    max-width: 65%;
   }
   .proposal_list {
     margin-bottom: 32px;
-    max-width: 450px;
+    /* max-width: 450px; */
   }
   .proposal_button {
     max-width: 306px;
   }
   .proposal_link {
-    font-family: Manrope;
+    /* font-family: Manrope; */
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
@@ -200,15 +208,22 @@
     top: 170px;
     left: 500px;
   }
-}
+  .tick_icon {
+    display: block;
 
+    width: 28px;
+    height: 28px;
+  }
+}
+/* __________________________
+*/
 @media screen and (min-width: 1280px) {
   .proposal_container {
     max-width: 1152px;
     padding-bottom: 143px;
   }
   .proposal_cta {
-    font-family: Manrope;
+    /* font-family: Manrope; */
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
@@ -240,7 +255,7 @@
     height: 500px;
   }
   .proposal_title {
-    font-family: Manrope;
+    /* font-family: Manrope; */
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -250,10 +265,14 @@
   }
   .proposal_list {
     margin-bottom: 39px;
-    max-width: 655px;
+    /* max-width: 600px; */
   }
   .proposal_books {
     top: 145px;
     left: 830px;
+  }
+  .tick_icon {
+    width: 32px;
+    height: 32px;
   }
 }
