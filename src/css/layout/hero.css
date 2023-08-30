@@ -53,6 +53,7 @@
 }
 
 .link-to-app {
+  font-family: Manrope;
   color: var(--white);
   font-size: 14px;
   font-weight: 700;
