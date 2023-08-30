@@ -5,7 +5,18 @@
   |============================
 */
 @import url('./base/reset.css');
-/* @import url('./vite-promo.css'); */
+@import url('./base/common.css');
 
-:root {
+root {
+  /* COLORS */
+  --black: #121417;
+  --green: #4dc274;
+  --green-linear: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #ffffff;
+  /* FONTS */
+  --primary-font: 'Manrope', sans-serif;
+  --transparent-black: rgba(18, 20, 23, 0.5);
+  --transparent-white: rgba(255, 255, 255, 0.7);
 }
