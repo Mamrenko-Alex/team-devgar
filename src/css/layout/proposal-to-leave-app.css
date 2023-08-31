@@ -1,0 +1,125 @@
+.application-form-container {
+  margin: 0 auto;
+}
+.application-form-title {
+  text-align: center;
+  margin-bottom: 14px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+
+  color: var(--black, #121417);
+}
+
+.application-form-instruction {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(var(--black), 0.8);
+}
+
+.application-form-intro {
+  display: none;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.form-field-input {
+  display: block;
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  line-height: 1.29;
+
+  font-size: 14px;
+
+  color: var(--black, #121417);
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  outline: none;
+}
+
+.form-field-comment {
+  width: 100%;
+  height: 94px;
+  padding: 16px 18px;
+  resize: none;
+  line-height: 1.29;
+
+  font-size: 14px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  outline: none;
+}
+
+.form-field-input::placeholder,
+.form-field-comment::placeholder {
+  display: block;
+
+  color: var(--black, #121417);
+}
+
+.form-choose-teacher {
+  border: 0;
+}
+
+.form-choose-teacher-title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+
+  letter-spacing: -0.02em;
+
+  color: var(--black, #121417);
+}
+
+.form-choose-teacher-option {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  color: var(--black, #121417);
+}
+
+.form-submit-btn {
+  display: flex;
+  max-width: 335px;
+  width: 100%;
+  padding: 14px 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.71;
+  border-radius: 12px;
+  background-color: var(--green);
+  margin-bottom: 16px;
+
+  color: var(--white);
+}
+
+.form-submit-policy {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+}
+@media screen and (max-width: 1280px) {
+}
