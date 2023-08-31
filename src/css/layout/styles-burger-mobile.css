@@ -105,7 +105,7 @@ justify-content: space-between;
     
 @media screen and (max-width:767px) {
     .menu-container{
-      min-width: calc((100%/3)*2);
+      width: calc(calc(100%/3)*2);
     }
 
 .mobile-menu{
@@ -120,9 +120,9 @@ justify-content: space-between;
 
    }
 
- @media screen and (max-width:1157px){
+ @media screen and (min-width:768px) and (max-width:1157px) {
   .menu-container{
-      min-width: calc(100%/2);
+      width: calc(100%/2);
     }
    }
 
