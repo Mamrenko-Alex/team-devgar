@@ -13,6 +13,7 @@
 
 button {
   cursor: pointer;
+  color: currentColor;
 }
 
 img {
@@ -30,4 +31,10 @@ li {
 .link,
 a {
   text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
 }
