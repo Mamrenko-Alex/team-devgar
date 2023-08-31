@@ -1,0 +1,131 @@
+:root {
+  --section-title-size-m: 32px;
+  --section-title-size-d: 40px;
+
+  --section-title-lh-m: 36px;
+  --section-title-lh-d: 48px;
+
+  --section-padding-m: 20px;
+  --section-padding-t: 30px;
+
+  --color-dark-gray: #121417;
+  --color-light-gray: rgba(18, 20, 23, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  padding: 0 var(--section-padding-m);
+  color: var(--color-light-gray);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 var(--section-padding-t);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+}
+
+.title {
+  color: var(--color-dark-gray);
+  font-weight: 700;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+.teachers-section {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 40px 0;
+}
+
+.teachers-section__title {
+  font-size: var(--section-title-size-m);
+  line-height: var(--section-title-lh-m);
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .teachers-section__title {
+    font-size: var(--section-title-size-d);
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 18px;
+  }
+}
+
+.cards-wrapper {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 64px 64px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-wrapper {
+    padding: 64px 0 0 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.card {
+  margin-top: 40px;
+}
+
+.card :not(:last-child) {
+  margin-bottom: 8px;
+}
+.card :first-child {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(50% - 32px);
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .card:nth-child(n + 3) {
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .card:nth-child(n + 3) {
+    margin-top: 0;
+  }
+
+  .card:not(:last-child) {
+    margin-right: 32px;
+  }
+}
