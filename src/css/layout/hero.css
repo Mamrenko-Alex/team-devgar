@@ -47,6 +47,8 @@
   border-radius: 12px;
   background-color: var(--green);
   margin-bottom: 20px;
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
 }
 
 .link-to-app {
@@ -65,6 +67,9 @@
   background-color: var(--white);
   border-radius: 50%;
   fill: var(--green);
+  transition: background-color var(--transition-timing)
+      var(--transition-function),
+    fill var(--transition-timing) var(--transition-function);
 }
 
 @media screen and (min-width: 374px) {
