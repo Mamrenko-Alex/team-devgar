@@ -2,7 +2,6 @@
   padding-top: 80px;
 }
 
-
 .about-title {
   margin-bottom: 16px;
   margin-left: auto;
@@ -101,7 +100,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .about-title {
     font-size: 40px;
     line-height: 1.2;
@@ -109,7 +107,6 @@
 
   .about-title-underline::after {
     height: 16px;
-
   }
 
   .about-text {
@@ -143,12 +140,10 @@
     letter-spacing: -0.04em;
   }
 
-
   .about-img {
     padding: 16px 0;
     margin: 0 auto;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -171,6 +166,6 @@
   }
 
   .about-img {
-    padding: 0 28px;
+    padding: 70px 28px;
   }
 }
