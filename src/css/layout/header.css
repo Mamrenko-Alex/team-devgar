@@ -14,7 +14,8 @@ a {
 }
  .header {
         display: flex;
-        justify-content: baseline;
+        align-items: center;
+        justify-content: center;
         min-width: 375px;
         padding: 20px;
       }
@@ -39,5 +40,13 @@ a {
 
 .nav-list{
 display: inline-flex;
-      
+     
+}
+.nav-list-link a{
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--black) ;
 }
