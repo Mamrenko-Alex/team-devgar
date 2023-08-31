@@ -1,0 +1,121 @@
+a{
+    text-decoration: none;
+}
+link{
+    text-decoration: none;
+}
+.js-menu-container{
+    display:none;
+}
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc((100hv/3)*2);
+    height: 100%;
+    padding: 80px 35px 40px 40px;
+    background-color:var(--green);
+    z-index: 999;
+    
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burger-list{
+  gap:20;
+ 
+  font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+.mobile-menu a{
+    color:#2E2F42;
+}
+
+.mobile-menu .accent{
+    color:#4D5AE5;
+}
+.burger-social-icons ul {
+  display: flex;
+justify-content: space-between;
+  padding-left: 0;
+}
+.social-list-icon {
+  
+  /* width: 42px;
+  height: 42px; */
+  fill:white;
+
+}
+@media (max-width:467px){
+
+    .burger-list-phone {
+        font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      
+        color:#4D5AE5;
+      }
+}
+ 
+
+  .mobile-menu {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  
+  .burger-adress{
+    display: flex;
+    flex-direction: column;
+gap:40px;
+text-decoration: none;
+  }
+
+.burger-adress-mail {
+ font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+letter-spacing: 0.4px;
+ }
+
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color:#2E2F42;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color:#2E2F42;
+  text-decoration: none;
+}
+/* ////////////////////////////// */
+@media (min-width:468px){
+    .burger-list-phone{
+        font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+       color:#4D5AE5;
+      }
+}
+/* ///////////////////////////// */

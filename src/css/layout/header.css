@@ -1,0 +1,43 @@
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+ .header {
+        display: flex;
+        justify-content: baseline;
+        min-width: 375px;
+        padding: 20px;
+      }
+
+      .logo{
+
+          font-family: Manrope;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+      }
+      .logo-english {
+        color: #121417;
+      }
+      .logo-exellence{
+        color:var(--green);
+      }
+
+.social-list:not(:last-child) {
+        margin-right: 10px;
+      }
+
+.nav-list{
+display: inline-flex;
+      
+}

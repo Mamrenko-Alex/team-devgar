@@ -13,6 +13,8 @@
 
 button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 img {
@@ -30,4 +32,5 @@ li {
 .link,
 a {
   text-decoration: none;
+ 
 }
