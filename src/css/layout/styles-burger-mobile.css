@@ -48,8 +48,6 @@ justify-content: space-between;
 }
 .social-list-icon {
   
-  width: 42px;
-  height: 42px;
   fill:var(--black);
 
 }
