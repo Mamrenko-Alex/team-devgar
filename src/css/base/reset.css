@@ -13,8 +13,7 @@
 
 button {
   cursor: pointer;
-  background-color: transparent;
-  border: none;
+  color: currentColor;
 }
 
 img {
@@ -22,6 +21,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 .list,
 ul,
@@ -32,5 +32,10 @@ li {
 .link,
 a {
   text-decoration: none;
- 
 }
+
+input,
+textarea,
+button {
+  font: inherit;
+  }

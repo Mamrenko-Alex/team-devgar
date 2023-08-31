@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reviews__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.64px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--black);
+  z-index: 1;
+}
+
+.reviews__title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 13px;
+  top: 25px;
+  width: 127px;
+  height: 12px;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  z-index: -1;
+}
+
+.reviews__content {
+  color: var(--transparent-black);
+  line-height: 1.13;
+  letter-spacing: -0.64px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.reviews__card {
+  width: 300px;
+  height: 278px;
+  padding: 20px 20px 40px 20px;
+  border-radius: 16px;
+  background-color: var(--gray);
+}
+
+.reviews__card-student {
+  display: flex;
+  padding: 14px;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: var(--green);
+}
+
+.reviews__card-student-photo {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.reviews__card-student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviews__card-student-name {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 24px;
+}
+
+.reviews__card-student-job {
+  color: var(---transparent-white);
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  line-height: 16px;
+}
+
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .reviews__title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .reviews__title::after {
+    right: 222px;
+    top: 28px;
+    width: 158px;
+    height: 20px;
+  }
+
+  .reviews__content {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: var(--black);
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
+
+  .reviews__list {
+    display: flex;
+  }
+
+  .reviews__card {
+    width: 320px;
+    height: 326px;
+    padding: 32px 16px 40px 16px;
+    border-radius: 30px;
+    background-color: var(--gray);
+  }
+
+  .reviews__card-student {
+    display: flex;
+    padding: 14px 14px 14px 16px;
+    gap: 8px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    background-color: var(--green);
+  }
+
+  .reviews__card-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 128px;
+  }
+
+  .reviews {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .reviews__title::after {
+    right: 382px;
+    top: 28px;
+    width: 158px;
+    height: 20px;
+  }
+
+  .reviews__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* swiper */
+
+@media screen and (max-width: 1279px) {
+  .swiper-pagination {
+    position: static;
+    margin-top: 16px;
+  }
+  
+  .swiper-pagination-bullet {
+    background: rgba(17, 17, 17, 0.5);
+    width: 13px;
+    height: 13px;
+    transition: width var(--transition-timing) var(--transition-function),
+      border-radius var(--transition-timing) var(--transition-function);
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--green);
+    width: 28px;
+    border-radius: 8px;
+  }
+}
+
+

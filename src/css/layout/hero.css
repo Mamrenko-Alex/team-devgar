@@ -131,7 +131,7 @@
       url('../../img/hero-screans/hero-screan-descktop.jpg');
   }
 
-  .hero-container {
+  .container.hero-container {
     margin: 0;
     padding: 164px 32px 32px 64px;
     max-width: 1280px;
