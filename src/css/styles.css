@@ -9,4 +9,13 @@
 /* @import url('./vite-promo.css'); */
 
 :root {
+  --color-green: #4DC274;
+  --color-text: rgba(18, 20, 23, 0.50);
+  --color-text-title: #121417;
+  --color-secondary-background: #F3F5F6;
+  --color-white: #ffffff;
+  --color-text-transparent: rgba(255, 255, 255, 0.50);
+  --color-pseudo-element: #BEE8CC;
+  --transition-timing: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
