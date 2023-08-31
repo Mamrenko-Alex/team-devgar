@@ -21,10 +21,13 @@ img {
   height: auto;
 }
 
-.list {
+.list,
+ul,
+li {
   list-style-type: none;
 }
 
-.link {
+.link,
+a {
   text-decoration: none;
 }

@@ -11,14 +11,6 @@ body {
   cursor: pointer;
 }
 
-.container {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,7 +47,7 @@ body {
     padding-right: 32px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
     margin-left: auto;
