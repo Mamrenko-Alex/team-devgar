@@ -48,10 +48,21 @@ justify-content: space-between;
 }
 .social-list-icon {
   
-  /* width: 42px;
-  height: 42px; */
-  fill:white;
+  width: 42px;
+  height: 42px;
+  fill:var(--black);
 
+}
+
+.social-list-iteam{
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list:not(:last-child) {
+  margin-right: 12px;
 }
 @media (max-width:467px){
 
