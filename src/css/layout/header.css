@@ -15,10 +15,11 @@ a {
  .header {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         min-width: 375px;
         padding: 20px;
       }
+     
 
       .logo{
 
@@ -71,4 +72,23 @@ display: flex;
 justify-content: center;
 align-content: center;
 padding: 8px;
+}
+.nav-list-link:not(:last-child){
+    margin-right: 20px;
+}
+
+@media screen and (min-width:1157px){
+    .nav-button{
+        display: none;
+    }
+};
+.js-menu-container #mobile-menu{
+    display: none;
+}
+    
+
+@media screen and (max-width:1158px){
+    .page-nav{
+        display: none;
+    }
 }
