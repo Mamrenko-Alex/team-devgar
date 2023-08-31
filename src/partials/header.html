@@ -9,7 +9,7 @@
        
 
         <ul class="nav-list list">
-          <li class="nav-list-link"><a href="#about-us" class="link accent">About us</a></li>
+          <li class="nav-list-link"><a href="#about-us" class="link">About us</a></li>
           <li class="nav-list-link"><a href="#our-lessons" class="link">Our lessonse</a></li>
           <li class="nav-list-link"><a href="#our-techers" class="link">Teachers</a></li>
           <li class="nav-list-link"><a href="#reviews" class="link">Reviews</a></li>
@@ -18,14 +18,14 @@
       </nav>
 
       <div class="burger-social-icons">
-        <!-- <h3 class="tittle-action">Social media</h3> -->
-        <ul class="footer-social-icons">
+      
+        <ul>
          
           <li class="social-list list">
             <a href="https://www.facebook.com/goITclub/" class="social-list-iteam" target=”_blank”>
               <svg class="social-list-icon" width="42" height="42">
                 <use
-                  href="../img/icons.svg#facebook-icon"
+                  href="./img/icons.svg#facebook-icon"
                   width="26px"
                 height="26px" 
                 ></use>
@@ -36,7 +36,7 @@
             <a href="https://www.instagram.com/goitclub/" class="social-list-iteam" target=”_blank”>
               <svg class="social-list-icon" width="42" height="42">
                 <use
-                href="../img/icons.svg#instagram-icon"
+                href="./img/icons.svg#instagram-icon"
                 width="26px"
                 height="26px" 
                 ></use>
@@ -47,7 +47,7 @@
             <a href="https://www.youtube.com/c/GoIT" class="social-list-iteam" target=”_blank”>
               <svg class="social-list-icon" width="42" height="42">
                 <use
-                href="../img/icons.svg#youtube-icon"
+                href="./img/icons.svg#youtube-icon"
                 width="26px"
                 height="26px" 
               ></use>
@@ -58,21 +58,21 @@
       </div>
     </div>
 
-    <button onclick=mobileMenu()
+    <button onclick="mobileMenu()"
+    class="menu-toggle js-open-menu"
     class="menu-toggle js-open-menu"
     aria-expanded="false"
     aria-controls="mobile-menu"
- 
   >
   
   <svg class="nav-button" width="32" height="32">
-   <use href="../img/nav.svg"
+   <use href="./img/nav.svg"
+   fill="#000000"
    width="32px"
    height="32px" >
 
    </use>
   </svg>
 </button>
-    <!-- <button class="burger" type="button" js-open-menu></button> -->
   </header>
   <script defer src="./mobile-menu.js"></script>

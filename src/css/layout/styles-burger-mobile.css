@@ -11,6 +11,7 @@ link{
     position: fixed;
     top: 0;
     left: 0;
+  
     height: 100%;
     padding: 80px 35px 40px 40px;
     background-color:var(--green);
@@ -38,7 +39,7 @@ link{
   position: absolute;
   top: 16px;
   right: 16px;
-  color:#2E2F42;
+  fill:#2E2F42;
 }
 
 .menu-toggle{
@@ -68,9 +69,7 @@ text-transform: capitalize;
     line-height: 18px;
 }
 
-.mobile-menu .accent{
-    color:#4D5AE5;
-}
+
 .burger-social-icons ul {
   display: flex;
 justify-content: space-between;
@@ -92,21 +91,22 @@ justify-content: space-between;
 .social-list:not(:last-child) {
   margin-right: 12px;
 }
-@media (max-width:467px){
 
-    .burger-list-phone {
-        font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      
-        color:#4D5AE5;
-      }
-    }
-    
+
+
+
+
+
+@media screen and (max-width: 374px) {
+.menu-container{
+  /* transform: translateX(); */
+  
+  width: calc(100%/3*2);
+}
+}
+
 @media screen and (max-width:767px) {
-    .menu-container{
-      width: calc(calc(100%/3)*2);
-    }
+   
 
 .mobile-menu{
   display: flex;
