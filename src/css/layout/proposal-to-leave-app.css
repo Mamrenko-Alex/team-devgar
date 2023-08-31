@@ -1,11 +1,13 @@
 .proposal_container {
   margin-right: auto;
   margin-left: auto;
+  margin-top: 150px;
   max-width: 335px;
-  background: linear-gradient(84.6deg, var(--green) 2.25%, #bee8cc 131.25%);
+  background: var(--green-linear);
   padding-top: 40px;
-  padding-bottom: 65px;
+  padding-bottom: 40px;
   border-radius: 16px;
+  overflow: hidden;
 }
 
 .proposal_cta {
@@ -20,13 +22,16 @@
   display: block;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 295px;
 
   margin-bottom: 68px;
 }
+
 .cards {
   position: relative;
   height: 408px;
   padding-bottom: 65px;
+  margin-bottom: 21px;
 }
 
 .card_back {
@@ -64,7 +69,7 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 16px;
-  padding: 65px 20px 20px 20px;
+  padding: 40px 20px;
 }
 
 .proposal_title {
@@ -126,6 +131,19 @@
   height: 20px;
 }
 /* ------------------- */
+@media screen and (max-width: 374px) {
+  .proposal_section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 16px;
+  }
+
+  .card_front,
+  .card_back,
+  .card_mid {
+    width: calc(100% - 20px);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .proposal_container {
@@ -143,6 +161,7 @@
     text-align: left;
     margin-bottom: 84px;
     margin-left: 32px;
+    max-width: 640px;
   }
   .cards {
     height: 500px;
@@ -168,6 +187,7 @@
     width: 668px;
     height: 500px;
     border-radius: 30px;
+    padding: 64px 20px;
   }
   .proposal_title {
     /* font-family: Manrope; */
@@ -229,30 +249,33 @@
     line-height: 70px;
     letter-spacing: 0em;
     text-align: left;
-    margin-bottom: 134px;
+    margin-bottom: 72px;
     margin-left: 64px;
+    max-width: 776px;
   }
   .cards {
-    height: 500px;
     padding-bottom: 144px;
+    margin-bottom: 0px;
   }
   .card_back {
-    width: 1024px;
-    height: 500px;
-    top: 30px;
-    left: 60px;
+    width: 1050px;
+    height: 463px;
+    top: 25px;
+    left: 38px;
+    transform: rotate(-8.65deg);
   }
   .card_mid {
-    width: 1024px;
-    height: 500px;
+    width: 1011px;
+    height: 402px;
     transform: rotate(11deg);
     transform-origin: center;
-    top: 20px;
-    left: 50px;
+    top: 54px;
+    left: 62px;
   }
   .card_front {
     width: 1024px;
-    height: 500px;
+    height: 471px;
+    padding: 64px;
   }
   .proposal_title {
     /* font-family: Manrope; */
@@ -274,5 +297,9 @@
   .tick_icon {
     width: 32px;
     height: 32px;
+  }
+
+  .proposal_list_item {
+    width: 937px;
   }
 }
