@@ -16,7 +16,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        min-width: 375px;
+     
         padding: 20px;
       }
      
@@ -81,7 +81,9 @@ padding: 8px;
     margin-right: 20px;
 }
 
-@media screen and (min-width:1157px){
+
+
+@media screen and (min-width:1280px){
     .nav-button{
         display: none;
     }
@@ -91,7 +93,7 @@ padding: 8px;
 }
     
 
-@media screen and (max-width:1158px){
+@media screen and (max-width:1279px){
     .social-list {
         display: none;
     }
