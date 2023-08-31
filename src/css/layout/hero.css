@@ -12,9 +12,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 8px;
-  margin-bottom: 80px;
-  padding: 425px 0 14px;
   border-radius: 16px;
 }
 
@@ -22,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 16px;
+  padding: 425px 16px 14px;
   max-width: 335px;
 }
 
@@ -50,6 +47,8 @@
   border-radius: 12px;
   background-color: var(--green);
   margin-bottom: 20px;
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
 }
 
 .link-to-app {
@@ -68,6 +67,9 @@
   background-color: var(--white);
   border-radius: 50%;
   fill: var(--green);
+  transition: background-color var(--transition-timing)
+      var(--transition-function),
+    fill var(--transition-timing) var(--transition-function);
 }
 
 @media screen and (min-width: 374px) {
@@ -81,7 +83,7 @@
   .hero-section {
     max-width: 704px;
     margin: 0 auto;
-    padding: 260px 0 32px;
+
     border-radius: 30px;
     background-image: linear-gradient(
         57deg,
@@ -92,10 +94,11 @@
   }
 
   .hero-container {
-    padding: 0 32px;
     max-width: 704px;
+    padding: 260px 32px 32px;
   }
 
+  .arrow-link,
   .arrow-icon {
     width: 48px;
     height: 48px;
@@ -124,7 +127,6 @@
   .hero-section {
     max-width: 1156px;
     margin: 0 auto;
-    padding: 164px 0 32px;
     border-radius: 30px;
     background-image: linear-gradient(
         57deg,
@@ -134,12 +136,13 @@
       url('../../img/hero-screans/hero-screan-descktop.jpg');
   }
 
-  .hero-container {
+  .container.hero-container {
     margin: 0;
-    padding-left: 64px;
-    max-width: 1136px;
+    padding: 164px 32px 32px 64px;
+    max-width: 1280px;
   }
 
+  .arrow-link,
   .arrow-icon {
     width: 48px;
     height: 48px;
@@ -173,5 +176,44 @@
   .arrow-link:focus > .arrow-icon {
     fill: var(--white);
     background-color: var(--green);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and (min-resolution: 2dppx),
+  screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-phone@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx),
+  screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx),
+  screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-descktop@2x.jpg');
   }
 }
