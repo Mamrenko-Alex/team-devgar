@@ -131,6 +131,19 @@
   height: 20px;
 }
 /* ------------------- */
+@media screen and (max-width: 374px) {
+  .proposal_section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 16px;
+  }
+
+  .card_front,
+  .card_back,
+  .card_mid {
+    width: calc(100% - 20px);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .proposal_container {
