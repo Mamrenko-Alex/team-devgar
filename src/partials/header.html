@@ -17,7 +17,7 @@
         </ul>
       </nav>
 
-      <div class="burger-social-icons">
+      <div class="social-icons">
       
         <ul>
          
@@ -56,23 +56,25 @@
           </li>
         </ul> 
       </div>
+      <button 
+      class="menu-toggle js-open-menu"
+      
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+    
+    <svg class="nav-button" width="32" height="32">
+     <use href="./img/icons.svg#nav-mobile-icon"
+    fill="black"
+     width="32px"
+     height="32px" >
+  
+     </use>
+    </svg>
+  </button>
     </div>
 
-    <button onclick="mobileMenu()"
-    class="menu-toggle js-open-menu"
-    class="menu-toggle js-open-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-  >
-  
-  <svg class="nav-button" width="32" height="32">
-   <use href="./img/nav.svg"
-   fill="#000000"
-   width="32px"
-   height="32px" >
-
-   </use>
-  </svg>
-</button>
+    
+    
   </header>
   <script defer src="./mobile-menu.js"></script>

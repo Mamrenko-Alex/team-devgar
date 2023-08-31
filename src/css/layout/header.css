@@ -34,7 +34,11 @@ a {
       .logo-exellence{
         color:var(--green);
       }
-
+      .social-icons ul {
+        display: flex;
+      justify-content: space-between;
+        padding-left: 0;
+      }
 .social-list:not(:last-child) {
         margin-right: 10px;
       }
@@ -88,6 +92,9 @@ padding: 8px;
     
 
 @media screen and (max-width:1158px){
+    .social-list {
+        display: none;
+    }
     .page-nav{
         display: none;
     }
