@@ -1,5 +1,5 @@
 .footer {
-  background: #121417;
+  background: var(--black);
   width: 100%;
 }
 
@@ -19,8 +19,8 @@
 
 .footer_wrapper-logo {
   text-decoration: none;
-  color: #fff;
-  font-family: Manrope;
+  color: var(--white);
+  font-family: var(--primary-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -28,7 +28,7 @@
 }
 
 .footer-span {
-  color: #4dc274;
+  color: var(--green);
 }
 
 .footer_address {
@@ -41,19 +41,19 @@
 }
 
 .footer_address_list_item_text {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Manrope;
+  color:var(--transparent-white);
+  font-family: var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
   letter-spacing: -0.28px;
 }
 
 .footer_address_list_item_link {
   text-decoration: none;
-  color: #fff;
-  font-family: Manrope;
+  color: var(--white);
+  font-family: var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -68,8 +68,8 @@
 
 .footer_nav_list_item_link {
   text-decoration: none;
-  color: #fff;
-  font-family: Manrope;
+  color: var(--white);
+  font-family: var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -97,7 +97,10 @@
 }
 
 .footer_social_list_item_link-icon {
-  fill: #fff;
+  fill:var(--white);
+}
+.footer_social_list_item_link-icon:focus{
+  fill: var(--focus-color);
 }
 
 .footer_bottom_line {
@@ -108,8 +111,8 @@
 }
 
 .footer_bottom_list_item_text {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Manrope;
+  color: var(--transparent-white);
+  font-family: var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -123,9 +126,9 @@
 }
 .footer_bottom_list_item-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--transparent-white);
+  font-family: var(--primary-font);
   text-align: right;
-  font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -134,7 +137,7 @@
 }
 
 .footer_bottom_list_item_btn-icon {
-  fill: #fff;
+  fill: var(--white);
 }
 
 .footer_bottom_list {
@@ -146,6 +149,14 @@
   justify-content: space-between;
 }
 
+.footer_bottom_list_item_btn-icon:focus{
+   fill: var(--focus-color);
+}
+
+.footer_bottom_list_item_btn-icon:hover{
+    fill: var(--focus-color);
+ }
+ 
 .item-left {
   display: flex;
   column-gap: 230px;
@@ -157,7 +168,7 @@
   column-gap: 18px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (max-width: 374px) {
   .footer_container {
     width: auto;
     max-width: 320px;
@@ -205,4 +216,8 @@
     left: 90%;
     top: 15px;
   }
+}
+
+@media screen and (mix-width: 375px) and (max-width: 768px) {
+
 }
