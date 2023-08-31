@@ -93,6 +93,7 @@
     padding: 260px 32px 32px;
   }
 
+  .arrow-link,
   .arrow-icon {
     width: 48px;
     height: 48px;
@@ -136,6 +137,7 @@
     max-width: 1280px;
   }
 
+  .arrow-link,
   .arrow-icon {
     width: 48px;
     height: 48px;
