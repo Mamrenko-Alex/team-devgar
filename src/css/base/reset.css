@@ -22,6 +22,7 @@ img {
   height: auto;
 }
 
+
 .list,
 ul,
 li {
@@ -37,4 +38,4 @@ input,
 textarea,
 button {
   font: inherit;
-}
+  }
