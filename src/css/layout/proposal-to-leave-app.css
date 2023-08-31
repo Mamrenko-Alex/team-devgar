@@ -103,12 +103,15 @@
   align-items: center;
 }
 .proposal_button {
+  cursor: pointer;
   background-color: var(--green);
   max-width: 255px;
   text-align: center;
   padding-top: 14px;
   padding-bottom: 14px;
   border-radius: 12px;
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
 }
 .proposal_link {
   color: #ffffff;
@@ -301,5 +304,10 @@
 
   .proposal_list_item {
     width: 937px;
+  }
+
+  .proposal_button:hover,
+  .proposal_button:focus {
+    background-color: var(--focus-color);
   }
 }
