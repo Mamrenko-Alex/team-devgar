@@ -71,7 +71,7 @@ img {
   letter-spacing: -0.64px;
   margin-bottom: 16px;
   text-align: center;
-  color: var(--color-text-title);
+  color: var(--black);
   z-index: 1;
 }
 
@@ -84,12 +84,12 @@ img {
   width: 127px;
   height: 12px;
   border-radius: 8px;
-  background-color: var(--color-pseudo-element);
+  background-color: var(--accent-color);
   z-index: -1;
 }
 
 .reviews__content {
-  color: var(--color-text);
+  color: var(--transparent-black);
   line-height: 1.13;
   letter-spacing: -0.64px;
   margin-bottom: 40px;
@@ -101,7 +101,7 @@ img {
   height: 278px;
   padding: 20px 20px 40px 20px;
   border-radius: 16px;
-  background-color: var(--color-secondary-background);
+  background-color: var(--gray);
 }
 
 .reviews__card-student {
@@ -110,7 +110,7 @@ img {
   gap: 8px;
   margin-bottom: 20px;
   border-radius: 8px;
-  background-color: var(--color-green);
+  background-color: var(--green);
 }
 
 .reviews__card-student-photo {
@@ -127,7 +127,7 @@ img {
 }
 
 .reviews__card-student-name {
-  color: var(--color-white);
+  color: var(--white);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.4px;
@@ -135,7 +135,7 @@ img {
 }
 
 .reviews__card-student-job {
-  color: var(--color-text-transparent);
+  color: var(---transparent-white);
   font-size: 12px;
   letter-spacing: -0.4px;
   line-height: 16px;
@@ -180,7 +180,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
-    color: var(--color-text);
+    color: var(--black);
     line-height: 1.67;
     margin-bottom: 64px;
   }
@@ -194,7 +194,7 @@ img {
     height: 326px;
     padding: 32px 16px 40px 16px;
     border-radius: 30px;
-    background-color: var(--color-secondary-background);
+    background-color: var(--gray);
   }
 
   .reviews__card-student {
@@ -203,7 +203,7 @@ img {
     gap: 8px;
     margin-bottom: 32px;
     border-radius: 15px;
-    background-color: var(--color-green);
+    background-color: var(--green);
   }
 
   .reviews__card-content {
@@ -255,7 +255,7 @@ img {
   }
   
   .swiper-pagination-bullet-active {
-    background-color: var(--color-green);
+    background-color: var(--green);
     width: 28px;
     border-radius: 8px;
   }

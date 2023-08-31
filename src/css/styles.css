@@ -31,4 +31,6 @@
   --accent-color: #bee8cc;
   --transparent-black: rgba(18, 20, 23, 0.5);
   --transparent-white: rgba(255, 255, 255, 0.7);
+  --transition-timing: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
