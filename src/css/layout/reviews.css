@@ -74,7 +74,7 @@
 }
 
 .reviews__card-student-job {
-  color: var(---transparent-white);
+  color: var(--transparent-white);
   font-size: 12px;
   letter-spacing: -0.4px;
   line-height: 16px;
@@ -122,7 +122,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
-    color: var(--black);
+    color: var(--transparent-black);
     line-height: 1.67;
     margin-bottom: 64px;
   }
@@ -151,6 +151,7 @@
   .reviews__card-content {
     font-size: 16px;
     line-height: 1.5;
+    color: var(--transparent-black);
   }
 }
 
