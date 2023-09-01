@@ -10,7 +10,10 @@ body {
 .anchor {
   cursor: pointer;
 }
+header{
 
+  background-color: white;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
