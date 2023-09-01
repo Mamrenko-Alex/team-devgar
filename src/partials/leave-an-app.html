@@ -1,0 +1,176 @@
+<section class="application-form-section" id="application-form">
+  <div class="application-form-container container">
+    <h2 class="application-form-title title">Leave an application</h2>
+
+    <p class="application-form-instruction">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+
+    <div class="application-form-wrapper">
+      <div class="application-form-intro">
+        <img
+          srcset="../img/other/leave-an-application@2x.png 2x"
+          src="../img/other/leave-an-application.png"
+          alt="Student image"
+        />
+
+        <p class="application-form-intro-title">1000</p>
+        <p class="application-form-intro-text">
+          of our online English language lessons! This journey has been full of
+          discovery, growth and unforgettable moments, and we are happy to share
+          this joyful event with you.
+        </p>
+      </div>
+
+      <form class="form">
+        <div class="form-wrapper">
+          <label class="form-field"
+            ><input
+              type="text"
+              class="form-field-input"
+              name="user_name"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ]"
+              placeholder="Name"
+              required
+          /></label>
+
+          <label class="form-field"
+            ><input
+              type="email"
+              class="form-field-input"
+              name="user_email"
+              placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+              required
+          /></label>
+
+          <label class="form-field"
+            ><input
+              type="tel"
+              class="form-field-input"
+              name="user_phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="Phone"
+              required
+          /></label>
+
+          <label class="form-field">
+            <textarea
+              class="form-field-comment"
+              name="user_message"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+
+          <fieldset class="form-choose-teacher">
+            <legend class="form-choose-teacher-title">Choose a teacher</legend>
+
+            <div class="form-choose-teacher-wrapper">
+              <div class="form-choose-teacher-field">
+                <input
+                  class="form-choose-teacher-option"
+                  type="radio"
+                  name="chosen_teacher"
+                  value="message"
+                  id="maria"
+                  checked
+                />
+                <label class="form-choose-teacher-label">
+                  <!-- <span class="form-choose-teacher-radio-btn">
+                  <div class="form-choose-teacher-radio-unchecked"></div>
+                  <svg
+                    class="form-choose-teacher-radio-btn-icon"
+                    width="20"
+                    height="20"
+                    aria-label="radio button icon"
+                  >
+                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
+                ></span> -->
+                  Maria
+                </label>
+              </div>
+
+              <div class="form-choose-teacher-field">
+                <input
+                  class="form-choose-teacher-option"
+                  type="radio"
+                  name="chosen_teacher"
+                  value="message"
+                  id="artem"
+                />
+                <label class="form-choose-teacher-label">
+                  <!-- <span class="form-choose-teacher-radio-btn">
+                  <div class="form-choose-teacher-radio-unchecked"></div>
+                  <svg
+                    class="form-choose-teacher-radio-btn-icon"
+                    width="20"
+                    height="20"
+                    aria-label="radio button icon"
+                  >
+                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
+                ></span> -->
+                  Artem
+                </label>
+              </div>
+
+              <div class="form-choose-teacher-field">
+                <input
+                  class="form-choose-teacher-option"
+                  type="radio"
+                  name="chosen_teacher"
+                  value="message"
+                  id="ilona"
+                />
+                <label class="form-choose-teacher-label">
+                  <!-- <span class="form-choose-teacher-radio-btn">
+                  <div class="form-choose-teacher-radio-unchecked"></div>
+                  <svg
+                    class="form-choose-teacher-radio-btn-icon"
+                    width="20"
+                    height="20"
+                    aria-label="radio button icon"
+                  >
+                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
+                ></span> -->
+                  Ilona
+                </label>
+              </div>
+
+              <div class="form-choose-teacher-field">
+                <input
+                  class="form-choose-teacher-option"
+                  type="radio"
+                  name="chosen_teacher"
+                  value="message"
+                  id="volodymyr"
+                />
+                <label class="form-choose-teacher-label">
+                  <!-- <span class="form-choose-teacher-radio-btn">
+                  <div class="form-choose-teacher-radio-unchecked"></div>
+                  <svg
+                    class="form-choose-teacher-radio-btn-icon"
+                    width="20"
+                    height="20"
+                    aria-label="radio button icon"
+                  >
+                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
+                ></span> -->
+                  Volodymyr
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="form-submit-btn" type="submit">Send</button>
+
+        <p class="form-submit-policy">
+          By clicking on “Send” button, you agree to our
+          <a class="form-submit-policy-link">Privacy Policy</a>,&nbsp;and allow
+          Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
