@@ -102,13 +102,17 @@ padding: 8px;
 
 
 @media screen and (min-width:1280px){
+    .menu-toggle{
+display:none
+    }
     .nav-button{
         display: none;
     }
+
+    .js-menu-container #mobile-menu{
+        display: none;
+    }
 };
-.js-menu-container #mobile-menu{
-    display: none;
-}
     
 
 @media screen and (max-width:1279px){
