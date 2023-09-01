@@ -1,6 +1,7 @@
 .hero-section {
   display: flex;
   margin: 0 16px;
+  margin-top: 88px;
   flex-shrink: 0;
   background-color: var(--black);
   background-image: linear-gradient(
@@ -47,6 +48,8 @@
   border-radius: 12px;
   background-color: var(--green);
   margin-bottom: 20px;
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
 }
 
 .link-to-app {
@@ -65,12 +68,16 @@
   background-color: var(--white);
   border-radius: 50%;
   fill: var(--green);
+  transition: background-color var(--transition-timing)
+      var(--transition-function),
+    fill var(--transition-timing) var(--transition-function);
 }
 
 @media screen and (min-width: 374px) {
   .hero-section {
     max-width: 335px;
     margin: 0 auto;
+    margin-top: 88px;
   }
 }
 
@@ -78,6 +85,7 @@
   .hero-section {
     max-width: 704px;
     margin: 0 auto;
+    margin-top: 112px;
 
     border-radius: 30px;
     background-image: linear-gradient(
@@ -122,6 +130,7 @@
   .hero-section {
     max-width: 1156px;
     margin: 0 auto;
+    margin-top: 100px;
     border-radius: 30px;
     background-image: linear-gradient(
         57deg,
@@ -131,7 +140,7 @@
       url('../../img/hero-screans/hero-screan-descktop.jpg');
   }
 
-  .hero-container {
+  .container.hero-container {
     margin: 0;
     padding: 164px 32px 32px 64px;
     max-width: 1280px;
