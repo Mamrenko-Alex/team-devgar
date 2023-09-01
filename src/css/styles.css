@@ -8,7 +8,6 @@
 @import url('./base/reset.css');
 @import url('./base/common.css');
 @import url('./layout/hero.css');
-@import url('./layout/reviews.css');
 @import url('./layout/header.css');
 @import url('./layout/styles-burger-mobile.css');
 @import url('./layout/leave-an-app.css');
@@ -18,6 +17,7 @@
 @import url('./layout/our-techers.css');
 /* @import url('./layout/footer.css'); */
 @import url('./layout/created-by.css');
+@import url('./layout/reviews.css');
 
 :root {
   /* COLORS */
