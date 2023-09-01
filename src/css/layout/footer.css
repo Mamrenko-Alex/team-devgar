@@ -106,6 +106,14 @@
   fill: var(--white);
 }
 
+.footer_social_list_item_link-icon:hover {
+    fill: var(--green);
+  }
+
+  .footer_social_list_item_link-icon:focus {
+    fill: var(--green);
+  }
+
 .footer_bottom_line {
   width: 1024px;
   margin: 0 auto;
@@ -168,7 +176,7 @@
   column-gap: 18px;
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 767px)  {
   .footer_container {
     width: auto;
     max-width: 320px;
@@ -224,7 +232,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 768px) {
+@media screen and  (max-width: 768px) {
 .footer_container {
     width: 100%;
     padding: 32px;
