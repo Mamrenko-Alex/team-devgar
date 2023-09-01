@@ -26,10 +26,12 @@ link{
   transform: translateX(0);
 }
 
+.nav-button{
+  cursor: pointer;
+}
 .mobile-menu {
   display: flex;
- 
-  padding: 0;
+  padding-top: 50%;
   margin: 0;
   list-style: none;
   flex-direction: column;
@@ -68,6 +70,7 @@ text-transform: capitalize;
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
+    
 }
 
 
@@ -98,7 +101,12 @@ text-transform: capitalize;
 } */
 
 .mobile-menu .nav-list-link {
-  margin-right: 0;
+ 
+  width: 20vh;
+    margin-right: auto;
+    margin-left: auto;
+   
+    text-align: center;
 }
 .mobile-menu .nav-list-link .link:hover::after,
 .mobile-menu .nav-list-link .link:focus::after {
@@ -125,13 +133,13 @@ text-transform: capitalize;
    
   .menu-container{
  
-    min-width: 60%;
+    min-width: calc((100% / 3 ) * 2);
    }
 .mobile-menu{
   display: flex;
     
-      padding: 0;
-      margin-top: 248px;
+      /* padding: 50%; */
+      /* margin-top: 248px; */
       list-style: none;
       flex-direction: column;
   gap:20px;
@@ -143,11 +151,7 @@ text-transform: capitalize;
   .menu-container{
       width: calc(100%/2);
     }
-    .mobile-menu{
-     
-          margin-top: 337px;
-          
-    }
+  
    }
 
   

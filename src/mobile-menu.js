@@ -2,7 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-  // const burgerLink =userList.querySelectorAll('ul.mobile-menu > li');
+  const bodyBg =document.querySelector('.bodyBg');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -32,4 +32,8 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  function toggleModal() {
+    bodyBg.classList.toggle("is-hidden");
+  }
 })();

@@ -116,7 +116,7 @@ display:none
     
 
 @media screen and (max-width:1279px){
-    .social-icons .social-list {
+   .social-icons .social-list {
         display: none;
     }
     .page-nav{
