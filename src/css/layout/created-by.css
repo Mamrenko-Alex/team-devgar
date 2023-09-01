@@ -33,8 +33,8 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   border-radius: 30px;
-  border: 1px solid rgba(77, 194, 116, 1);
-  background-color: #ffffff;
+  border: 1px solid var(--green);
+  background-color: var(--white);
   overflow: scroll;
 }
 
@@ -54,11 +54,9 @@
   flex-basis: calc((100% - 27px) / 2);
 }
 .team-modal-title {
-  /* margin-bottom: 79px; */
   margin-bottom: 50px;
-  color: #121417;
-
-  font-family: Manrope;
+  color: var(--black);
+  font-family: var(--primary-font);
   font-size: 28px;
   font-weight: 700;
   line-height: 48px;
@@ -75,8 +73,8 @@
 .team-modal-item-title {
   margin-top: 16px;
   margin-bottom: 8px;
-  color: #121417;
-  font-family: Manrope;
+  color: var(--black);
+  font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -85,8 +83,8 @@
 }
 
 .team-modal-item-text {
-  color: #12141780;
-  font-family: Manrope;
+  color: var(--transparent-black);
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -96,18 +94,17 @@
 
 .team-modal-button {
   margin-top: 74px;
-  color: #ffffff;
-  font-family: Manrope;
+  color: var(--white);
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
-
   align-self: center;
   cursor: pointer;
   border: none;
-  background-color: #4dc274;
+  background-color: var(--green);
   padding: 16px 35px;
   border-radius: 12px;
   transition: background-color var(--transition-timing)
@@ -115,7 +112,7 @@
 }
 .team-modal-button:hover,
 .team-modal-button:focus {
-  background-color: #38ae5f;
+  background-color: var(--focus-color);
 }
 .team-modal-btn-close {
   position: absolute;
@@ -124,15 +121,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-
+  background-color: var(--green);
+  border: 1px solid var(--green);
   width: 32px;
   height: 32px;
-
   cursor: pointer;
-  transition: background-color var(--transition-duration-and-fun);
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
 }
 
 .team-modal-icon {
@@ -146,7 +141,6 @@
     width: calc(100% - 32px);
   }
 }
-/* ------------------------ */
 
 /* ----------------- TABLET ----------------- */
 @media screen and (min-width: 768px) {
@@ -164,7 +158,6 @@
   }
 
   .team-modal-item {
-    /* width: 153px; */
     height: 229px;
     flex-basis: calc((100% - 64px) / 3);
   }
@@ -200,7 +193,6 @@
   .team-modal-list {
     gap: 32px 32px;
     width: 893px;
-    /* height: 527px; */
   }
   .team-modal-item {
     height: 229px;
