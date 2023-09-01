@@ -1,14 +1,17 @@
 .lessons-container {
-  display: flex;
-  flex-direction: column;
   padding-top: 80px;
 }
 .lessons-title {
-  color: var(--black);
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   font-family: var(--primary-font);
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
 }
 .lessons-title-underline {
   position: relative;
@@ -52,6 +55,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
+  font-size: 14px;
+  padding: 40px 20px 20px 20px;
 }
 .lessons-item-title {
   color: var(--black);
@@ -62,6 +67,7 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.4px;
+  margin-bottom: 16px;
 }
 .lessons-item-price {
   color: var(--black);
@@ -73,25 +79,28 @@
   letter-spacing: -0.64px;
 }
 .lessons-button {
-  /* padding: 14px 78px;
-    margin: 0px 20px 40px 20px; */
   min-width: calc(100% - 40px);
   display: flex;
   padding: 14px;
-  /* margin: 0px; */
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
-  /* max-width: 255px; */
   height: 52px;
   border-radius: 12px;
-  border: none;
   background-color: var(--green);
-  /* margin-bottom: 20px; */
   transition: background-color var(--transition-timing)
     var(--transition-function);
+
+  border: 1px solid #fff;
+}
+.button-text {
+  color: #fff;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.71;
 }
 .lessons-item-border {
   padding: 40px 20px;
@@ -100,13 +109,6 @@
   /* background: #fff; */
 }
 @media screen and (max-width: 767px) {
-  .container {
-    max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .lessons-title {
     font-size: 32px;
     line-height: 1.12;
@@ -114,36 +116,52 @@
     margin-bottom: 16px;
   }
   .lessons-subtitle {
-    font-size: 14px;
-    line-height: 1.71;
+    max-width: 334px;
+    color: var(--transparent-black);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: var(--primary-font);
     margin-bottom: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
   }
   .lessons-list {
-    flex-basis: 100%;
-  }
-  .lessons-item-title {
-    /* padding-top: 40px; */
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
   .lessons-item-price {
     line-height: 1.12;
   }
-  .lessons-description {
-    font-size: 14px;
-    padding: 40px 20px 20px 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .lessons-container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
   }
-
-  .button-text {
-    color: #fff;
-    font-family: var(--primary-font);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.71;
+  .lessons-title {
+    font-size: 40px;
+    line-height: 1.2;
   }
-  .lessons-button {
-    /* padding: 14px 78px;
-    margin: 0px 20px 40px 20px; */
-    border: 1px solid #fff;
+  .lessons-subtitle {
+    max-width: 658px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .lessons-list {
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 64px 64px 0;
+  }
+  .lessons-item-border {
+    width: calc((100% - 32px) / 2);
+    margin-top: 0;
+    font-size: 16px;
   }
 }
