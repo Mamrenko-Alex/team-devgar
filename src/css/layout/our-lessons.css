@@ -13,10 +13,11 @@
   line-height: 1.13;
   letter-spacing: -0.02em;
 }
-.lessons-title-underline {
+.title-underline {
   position: relative;
 }
-.lessons-title-underline::after {
+
+.title-underline::after {
   content: ' ';
   position: absolute;
   display: block;
@@ -28,6 +29,7 @@
   border-radius: 8px;
   background: var(--accent-color);
 }
+
 .lessons-subtitle {
   color: var(--transparent-black);
   text-align: center;
@@ -56,7 +58,7 @@
   font-weight: 400;
   line-height: 1.71;
   font-size: 14px;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 0 20px;
 }
 .lessons-item-title {
   color: var(--black);
@@ -102,19 +104,28 @@
   font-weight: 700;
   line-height: 1.71;
 }
+
+.lessons-button:hover,
+.lessons-button:focus {
+  background-color: var(--focus-color);
+}
+
 .lessons-item-border {
   padding: 40px 20px;
   border-radius: 16px;
   border: 1px solid #4dc274;
-  /* background: #fff; */
 }
 @media screen and (max-width: 767px) {
+  .lessons-container {
+    padding-top: 100px;
+  }
   .lessons-title {
     font-size: 32px;
     line-height: 1.12;
     letter-spacing: -0.64px;
     margin-bottom: 16px;
   }
+
   .lessons-subtitle {
     max-width: 334px;
     color: var(--transparent-black);
@@ -132,23 +143,21 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 64px 64px 0;
   }
   .lessons-item-price {
     line-height: 1.12;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .lessons-container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 0 auto;
-  }
   .lessons-title {
     font-size: 40px;
     line-height: 1.2;
   }
+
+  .lessons-description {
+    padding: 40px 11px 20px;
+  }
+
   .lessons-subtitle {
     max-width: 658px;
     font-size: 18px;
@@ -157,8 +166,7 @@
   .lessons-list {
     flex-direction: row;
     gap: 32px;
-    flex-wrap: wrap;
-    padding: 64px 64px 0;
+    padding-top: 64px;
   }
   .lessons-item-border {
     width: calc((100% - 32px) / 2);
@@ -167,6 +175,10 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .lessons-container {
+    padding-top: 150px;
+  }
+
   .lessons-list {
     padding: 64px 64px 0;
     flex-wrap: nowrap;
