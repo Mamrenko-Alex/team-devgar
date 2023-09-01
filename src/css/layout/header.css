@@ -64,6 +64,7 @@ justify-content: center;
 
 
 .nav-list-link a{
+    position: relative;
     font-family: Manrope;
     font-size: 14px;
     font-style: normal;
@@ -80,6 +81,19 @@ padding: 8px;
 .nav-list-link:not(:last-child){
     margin-right: 20px;
 }
+
+
+
+.nav-list-link .link:hover::after,
+.nav-list-link .link:focus::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 37px;
+    height: 2px;
+    background-color: var(--green);
+} 
 
 
 
