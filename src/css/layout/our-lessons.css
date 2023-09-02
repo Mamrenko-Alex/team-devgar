@@ -180,7 +180,9 @@
   }
 
   .lessons-subtitle {
-    max-width: 658px;
+    font-size: 18px;
+    padding: 0 137px;
+    margin: 0 auto;
   }
 
   .lessons-list {
