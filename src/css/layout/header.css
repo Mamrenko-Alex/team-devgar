@@ -1,0 +1,120 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px;
+}
+
+.logo {
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.logo-english {
+  color: var(--black);
+}
+.logo-exellence {
+  color: var(--green);
+}
+.social-icons ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-list {
+  display: inline-flex;
+}
+.nav.list .link {
+  display: block;
+  align-items: center;
+  justify-content: baseline;
+}
+.social-list {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list-link a {
+  position: relative;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--black);
+}
+.social-list-icon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 8px;
+}
+.nav-list-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-list-icon:hover,
+.social-list-icon:focus {
+  fill: var(--green);
+}
+
+.nav-list-link .link:hover::after,
+.nav-list-link .link:focus::after,
+.nav-list-link .link:active:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
+  }
+  .nav-button {
+    display: none;
+  }
+
+  .js-menu-container #mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .social-icons .social-list {
+    display: none;
+  }
+  .page-nav {
+    display: none;
+  }
+}

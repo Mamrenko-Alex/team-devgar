@@ -10,7 +10,10 @@ body {
 .anchor {
   cursor: pointer;
 }
+header{
 
+  background-color: white;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,30 +32,32 @@ body {
     max-width: 335px;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .container {
     width: 375px;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 32px;
     padding-right: 32px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 64px;
     padding-right: 64px;
+    margin: 0 auto;
   }
 }
