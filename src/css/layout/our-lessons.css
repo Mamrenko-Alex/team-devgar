@@ -33,7 +33,6 @@
 .lessons-subtitle {
   color: var(--transparent-black);
   text-align: center;
-  font-family: var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -115,6 +114,7 @@
   border-radius: 16px;
   border: 1px solid #4dc274;
 }
+
 @media screen and (max-width: 767px) {
   .lessons-container {
     padding-top: 100px;
@@ -177,6 +177,10 @@
 @media screen and (min-width: 1280px) {
   .lessons-container {
     padding-top: 150px;
+  }
+
+  .lessons-subtitle {
+    max-width: 658px;
   }
 
   .lessons-list {
