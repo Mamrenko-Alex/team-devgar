@@ -1,11 +1,17 @@
+.section-headr {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 .header {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 50;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: white;
   padding: 20px;
 }
@@ -84,10 +90,15 @@
   background-color: var(--green);
 }
 
+@media screen and (max-width: 374px) {
+  .container.header {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .section-headr {
     max-width: 1280px;
-    margin: 0 auto;
   }
 
   .header {
@@ -116,5 +127,11 @@
   }
   .page-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section-headr {
+    max-width: 768px;
   }
 }
