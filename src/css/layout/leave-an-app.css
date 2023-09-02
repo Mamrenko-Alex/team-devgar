@@ -69,13 +69,45 @@
 }
 
 .form-choose-teacher {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
   border: 0;
 }
 
-.form-choose-teacher-wrapper {
+/* .form-choose-teacher-wrapper {
   display: flex;
   flex-direction: column;
   gap: 8px;
+} */
+
+.radio-btn-icon {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid rgba(18, 20, 23, 0.20);
+  padding: 3px;
+  fill: transparent;
+  transition: fill var(--transition-timing) var(--transition-function), border-color var(--transition-timing) var(--transition-function);
+}
+
+.custom-radio-btn {
+  appearance: none;
+  position: absolute;
+}
+
+.custom-radio-btn:checked+.radio-btn-icon {
+  fill: var(--green);
+  border-color: var(--green);
+}
+
+.form-choose-teacher-label-radio-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  cursor: pointer;
 }
 
 .form-choose-teacher-title {
@@ -87,7 +119,7 @@
   color: var(--black, #121417);
 }
 
-.form-choose-teacher-label {
+/* .form-choose-teacher-label {
   display: inline-block;
   margin-left: 9px;
   text-align: center;
@@ -97,14 +129,14 @@
   line-height: 1.71;
   letter-spacing: -0.02em;
   color: var(--black);
-}
+} */
 
-input[type='radio'],
+/* input[type='radio'],
 label {
   cursor: pointer;
-}
+} */
 
-input[type='radio'] {
+/* input[type='radio'] {
   position: relative;
   height: 20px;
   width: 20px;
@@ -112,9 +144,9 @@ input[type='radio'] {
   -moz-appearance: none;
   appearance: none;
   outline: none;
-}
+} */
 
-input[type='radio']::before {
+/* input[type='radio']::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -138,7 +170,7 @@ input[type='radio']:checked::after {
   background-color: var(--green);
   transform: translate(-50%, -50%);
   visibility: visible;
-}
+} */
 
 .form-submit-btn {
   display: flex;
@@ -156,8 +188,7 @@ input[type='radio']:checked::after {
   background-color: var(--green);
   margin-bottom: 16px;
   color: var(--white);
-  transition: background-color var(--transition-timing)
-    var(--transition-function);
+  transition: background-color var(--transition-timing) var(--transition-function);
 }
 
 .form-submit-btn:hover,
@@ -246,7 +277,9 @@ input[type='radio']:checked::after {
     height: 104px;
   }
 
-  .form-choose-teacher-wrapper {
+
+
+  .form-choose-teacher {
     flex-direction: row;
     gap: 16px;
   }
@@ -257,8 +290,7 @@ input[type='radio']:checked::after {
     line-height: 1.2;
   }
 
-  .form-choose-teacher-label {
-    margin-left: 8px;
+  .form-choose-teacher-label-radio-btn {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
@@ -358,7 +390,7 @@ input[type='radio']:checked::after {
     line-height: 1.5;
   }
 
-  .form-choose-teacher-wrapper {
+  /* .form-choose-teacher-wrapper {
     flex-direction: row;
     gap: 16px;
   }
@@ -369,12 +401,12 @@ input[type='radio']:checked::after {
     line-height: 1.2;
   }
 
-  .form-choose-teacher-label {
+  .form-choose-teacher-label-radio-btn {
     margin-left: 8px;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
-  }
+  } */
 
   .form-submit-btn {
     min-width: 100%;
