@@ -49,7 +49,6 @@
 .nav.list .link {
   display: block;
   align-items: center;
-  justify-content: baseline;
 }
 .social-list {
   display: flex;
