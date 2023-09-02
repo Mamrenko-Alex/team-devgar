@@ -9,7 +9,7 @@
   font-weight: 600;
   line-height: 1.13;
   letter-spacing: -0.02em;
-  color: var(--black, #121417);
+  color: var(--black);
 }
 
 .application-form-instruction {
@@ -38,7 +38,7 @@
   border-radius: 12px;
   line-height: 1.29;
   font-size: 14px;
-  color: var(--black, #121417);
+  color: var(--black);
   border: 1px solid rgba(18, 20, 23, 0.1);
   outline: none;
   transition: border-color var(--transition-timing) var(--transition-function);
@@ -65,7 +65,7 @@
 .form-field-input::placeholder,
 .form-field-comment::placeholder {
   display: block;
-  color: var(--black, #121417);
+  color: var(--black);
 }
 
 .form-choose-teacher {
@@ -111,7 +111,7 @@
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  color: var(--black, #121417);
+  color: var(--black);
 }
 
 .form-submit-btn {

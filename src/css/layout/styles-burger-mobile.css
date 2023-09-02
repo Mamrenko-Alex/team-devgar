@@ -5,9 +5,9 @@ link {
   text-decoration: none;
 }
 
-.js-menu-container{
-    display:none;
-    z-index: 999;
+.js-menu-container {
+  display: none;
+  z-index: 999;
 }
 .menu-container {
   position: fixed;
@@ -55,7 +55,6 @@ link {
   border: none;
 }
 
-
 .backdrop {
   position: absolute;
   z-index: 100;
@@ -63,20 +62,19 @@ link {
   left: 0;
   width: 100vh;
   height: 100vh;
-  background-color:rgba(18, 20, 23, 0.40);
+  background-color: rgba(18, 20, 23, 0.4);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-container .js-menu-container .is-open{
+.menu-container .js-menu-container .is-open {
   z-index: 50;
 }
 
-.burger-list{
-  gap:20;
- 
+.burger-list {
+  gap: 20;
 
-  font-family: Roboto;
+  font-family: var(--primary-font);
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -86,7 +84,7 @@ link {
 }
 .mobile-menu .nav-list-link a {
   color: white;
-  font-family: Manrope;
+  font-family: var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -109,7 +107,6 @@ link {
   align-items: center;
   justify-content: center;
 }
-
 
 .mobile-menu .nav-list-link {
   width: 20vh;
@@ -169,11 +166,11 @@ link {
 }
 
 .burger-adress-mail {
-  font-family: Roboto;
+  font-family: var(--primary-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.4px;
 }
 

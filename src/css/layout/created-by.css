@@ -34,7 +34,7 @@
   cursor: pointer;
   border-radius: 30px;
   border: 1px solid rgba(77, 194, 116, 1);
-  background-color: #ffffff;
+  background-color: var(--white);
   overflow: scroll;
 }
 
@@ -54,11 +54,10 @@
   flex-basis: calc((100% - 27px) / 2);
 }
 .team-modal-title {
-  /* margin-bottom: 79px; */
   margin-bottom: 50px;
-  color: #121417;
+  color: var(--black);
 
-  font-family: Manrope;
+  font-family: var(--primary-font);
   font-size: 28px;
   font-weight: 700;
   line-height: 48px;
@@ -75,8 +74,8 @@
 .team-modal-item-title {
   margin-top: 16px;
   margin-bottom: 8px;
-  color: #121417;
-  font-family: Manrope;
+  color: var(--black);
+  font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -85,8 +84,8 @@
 }
 
 .team-modal-item-text {
-  color: #12141780;
-  font-family: Manrope;
+  color: var(--black);
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -96,8 +95,8 @@
 
 .team-modal-button {
   margin-top: 74px;
-  color: #ffffff;
-  font-family: Manrope;
+  color: var(--white);
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 700;
   line-height: 28px;
@@ -107,7 +106,7 @@
   align-self: center;
   cursor: pointer;
   border: none;
-  background-color: #4dc274;
+  background-color: var(--green);
   padding: 16px 35px;
   border-radius: 12px;
   transition: background-color var(--transition-timing)
@@ -115,7 +114,7 @@
 }
 .team-modal-button:hover,
 .team-modal-button:focus {
-  background-color: #38ae5f;
+  background-color: var(--focus-color);
 }
 .team-modal-btn-close {
   position: absolute;

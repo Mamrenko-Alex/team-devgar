@@ -73,7 +73,6 @@
 }
 
 .proposal_title {
-  /* font-family: Manrope; */
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -82,7 +81,6 @@
   margin-bottom: 20px;
 }
 .proposal_text {
-  /* font-family: Manrope; */
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -114,8 +112,7 @@
     var(--transition-function);
 }
 .proposal_link {
-  color: #ffffff;
-  /* font-family: Manrope; */
+  color: var(--white);
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -160,7 +157,6 @@
     border-radius: 30px;
   }
   .proposal_cta {
-    /* font-family: Manrope; */
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
@@ -197,7 +193,6 @@
     padding: 64px 20px;
   }
   .proposal_title {
-    /* font-family: Manrope; */
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -206,7 +201,6 @@
     margin-bottom: 32px;
   }
   .proposal_text {
-    /* font-family: Manrope; */
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -217,13 +211,11 @@
   }
   .proposal_list {
     margin-bottom: 32px;
-    /* max-width: 450px; */
   }
   .proposal_button {
     max-width: 306px;
   }
   .proposal_link {
-    /* font-family: Manrope; */
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
@@ -250,7 +242,6 @@
     padding-bottom: 143px;
   }
   .proposal_cta {
-    /* font-family: Manrope; */
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
@@ -285,7 +276,6 @@
     padding: 64px;
   }
   .proposal_title {
-    /* font-family: Manrope; */
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -295,7 +285,6 @@
   }
   .proposal_list {
     margin-bottom: 39px;
-    /* max-width: 600px; */
   }
   .proposal_books {
     top: 145px;
