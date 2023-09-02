@@ -279,6 +279,11 @@ input[type='radio']:checked::after {
 }
 
 @media screen and (min-width: 1280px) {
+  .container.application-form-container {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+
   .application-form-section {
     padding-top: 150px;
   }
