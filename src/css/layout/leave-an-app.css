@@ -84,10 +84,11 @@
 .radio-btn-icon {
   cursor: pointer;
   border-radius: 10px;
-  border: 2px solid rgba(18, 20, 23, 0.20);
+  border: 2px solid rgba(18, 20, 23, 0.2);
   padding: 3px;
   fill: transparent;
-  transition: fill var(--transition-timing) var(--transition-function), border-color var(--transition-timing) var(--transition-function);
+  transition: fill var(--transition-timing) var(--transition-function),
+    border-color var(--transition-timing) var(--transition-function);
 }
 
 .custom-radio-btn {
@@ -95,7 +96,7 @@
   position: absolute;
 }
 
-.custom-radio-btn:checked+.radio-btn-icon {
+.custom-radio-btn:checked + .radio-btn-icon {
   fill: var(--green);
   border-color: var(--green);
 }
@@ -188,7 +189,8 @@ input[type='radio']:checked::after {
   background-color: var(--green);
   margin-bottom: 16px;
   color: var(--white);
-  transition: background-color var(--transition-timing) var(--transition-function);
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
 }
 
 .form-submit-btn:hover,
@@ -277,8 +279,6 @@ input[type='radio']:checked::after {
     height: 104px;
   }
 
-
-
   .form-choose-teacher {
     flex-direction: row;
     gap: 16px;
@@ -314,6 +314,10 @@ input[type='radio']:checked::after {
   .container.application-form-container {
     padding-left: 128px;
     padding-right: 128px;
+  }
+
+  .form-comment {
+    padding-bottom: 8px;
   }
 
   .application-form-section {
