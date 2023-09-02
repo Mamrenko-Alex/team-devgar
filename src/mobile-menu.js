@@ -3,6 +3,7 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const bodyBg =document.querySelector("[data-burger]");
+  const burgerLinks=document.querySelectorAll("#burger")
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -19,6 +20,10 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+
+  burgerLinks.forEach((burgerIteam)=> {
+    burgerIteam.addEventListener('click', toggleMenu)
+  })
 
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
