@@ -10,8 +10,7 @@ body {
 .anchor {
   cursor: pointer;
 }
-header{
-
+header {
   background-color: white;
 }
 .visually-hidden {
@@ -42,7 +41,7 @@ header{
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767.99px) {
   .container {
     width: 375px;
     padding-left: 16px;
@@ -51,7 +50,7 @@ header{
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.99px) {
   .container {
     width: 768px;
     padding-left: 32px;

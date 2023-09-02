@@ -53,11 +53,14 @@
 }
 .social-list {
   display: flex;
-  border-radius: 10px;
-  border: 1px solid rgba(18, 20, 23, 0.1);
-  display: flex;
+  gap: 12px;
   align-items: center;
   justify-content: center;
+}
+
+.social-list-item {
+  border-radius: 10px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
 }
 
 .nav-list-link a {
@@ -83,19 +86,6 @@
 .social-list-icon:hover,
 .social-list-icon:focus {
   fill: var(--green);
-}
-
-.nav-list-link .link:hover::after,
-.nav-list-link .link:focus::after,
-.nav-list-link .link a:visited::after,
-.nav-list-link .link:active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 37px;
-  height: 2px;
-  background-color: var(--green);
 }
 
 .nav-link-header {
