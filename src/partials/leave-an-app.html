@@ -1,6 +1,8 @@
 <section class="application-form-section" id="application-form">
-  <div class="application-form-container container">
-    <h2 class="application-form-title title">Leave an application</h2>
+  <div class="container application-form-container">
+    <h2 class="application-form-title title">
+      Leave an <span class="title-underline">application</span>
+    </h2>
 
     <p class="application-form-instruction">
       Please use the form below to contact us. Enter your name, email, and
@@ -10,8 +12,8 @@
     <div class="application-form-wrapper">
       <div class="application-form-intro">
         <img
-          srcset="../img/other/leave-an-application@2x.png 2x"
-          src="../img/other/leave-an-application.png"
+          srcset="./img/other/leave-an-application@2x.png 2x"
+          src="./img/other/leave-an-application.png"
           alt="Student image"
         />
 
@@ -30,7 +32,7 @@
               type="text"
               class="form-field-input"
               name="user_name"
-              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ]"
+              pattern="[a-z-A-Zа-яА-ЯіІїЇєЄґҐ]"
               placeholder="Name"
               required
           /></label>
@@ -55,7 +57,7 @@
               required
           /></label>
 
-          <label class="form-field">
+          <label class="form-comment">
             <textarea
               class="form-field-comment"
               name="user_message"
@@ -65,101 +67,58 @@
 
           <fieldset class="form-choose-teacher">
             <legend class="form-choose-teacher-title">Choose a teacher</legend>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn"
+                type="radio"
+                name="chose_teacher"
+                required
+                checked
+              />
 
-            <div class="form-choose-teacher-wrapper">
-              <div class="form-choose-teacher-field">
-                <input
-                  class="form-choose-teacher-option"
-                  type="radio"
-                  name="chosen_teacher"
-                  value="message"
-                  id="maria"
-                  checked
-                />
-                <label class="form-choose-teacher-label">
-                  <!-- <span class="form-choose-teacher-radio-btn">
-                  <div class="form-choose-teacher-radio-unchecked"></div>
-                  <svg
-                    class="form-choose-teacher-radio-btn-icon"
-                    width="20"
-                    height="20"
-                    aria-label="radio button icon"
-                  >
-                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
-                ></span> -->
-                  Maria
-                </label>
-              </div>
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Maria
+            </label>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn visually-hidden"
+                type="radio"
+                name="chose_teacher"
+              />
 
-              <div class="form-choose-teacher-field">
-                <input
-                  class="form-choose-teacher-option"
-                  type="radio"
-                  name="chosen_teacher"
-                  value="message"
-                  id="artem"
-                />
-                <label class="form-choose-teacher-label">
-                  <!-- <span class="form-choose-teacher-radio-btn">
-                  <div class="form-choose-teacher-radio-unchecked"></div>
-                  <svg
-                    class="form-choose-teacher-radio-btn-icon"
-                    width="20"
-                    height="20"
-                    aria-label="radio button icon"
-                  >
-                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
-                ></span> -->
-                  Artem
-                </label>
-              </div>
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Artem
+            </label>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn visually-hidden"
+                type="radio"
+                name="chose_teacher"
+                required
+              />
 
-              <div class="form-choose-teacher-field">
-                <input
-                  class="form-choose-teacher-option"
-                  type="radio"
-                  name="chosen_teacher"
-                  value="message"
-                  id="ilona"
-                />
-                <label class="form-choose-teacher-label">
-                  <!-- <span class="form-choose-teacher-radio-btn">
-                  <div class="form-choose-teacher-radio-unchecked"></div>
-                  <svg
-                    class="form-choose-teacher-radio-btn-icon"
-                    width="20"
-                    height="20"
-                    aria-label="radio button icon"
-                  >
-                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
-                ></span> -->
-                  Ilona
-                </label>
-              </div>
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Ilona
+            </label>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn visually-hidden"
+                type="radio"
+                name="chose_teacher"
+                required
+              />
 
-              <div class="form-choose-teacher-field">
-                <input
-                  class="form-choose-teacher-option"
-                  type="radio"
-                  name="chosen_teacher"
-                  value="message"
-                  id="volodymyr"
-                />
-                <label class="form-choose-teacher-label">
-                  <!-- <span class="form-choose-teacher-radio-btn">
-                  <div class="form-choose-teacher-radio-unchecked"></div>
-                  <svg
-                    class="form-choose-teacher-radio-btn-icon"
-                    width="20"
-                    height="20"
-                    aria-label="radio button icon"
-                  >
-                    <use href="../img/icons.svg#radio-btn-icon"></use></svg
-                ></span> -->
-                  Volodymyr
-                </label>
-              </div>
-            </div>
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Volodymyr
+            </label>
           </fieldset>
         </div>
 
@@ -167,8 +126,9 @@
 
         <p class="form-submit-policy">
           By clicking on “Send” button, you agree to our
-          <a class="form-submit-policy-link">Privacy Policy</a>,&nbsp;and allow
-          Promodo to use this information for marketing purposes.
+          <a class="link form-submit-policy-link" href="">Privacy Policy</a
+          >,<br />and allow Promodo to use this information for marketing
+          purposes.
         </p>
       </form>
     </div>

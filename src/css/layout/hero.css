@@ -1,6 +1,7 @@
 .hero-section {
   display: flex;
   margin: 0 16px;
+  margin-top: 88px;
   flex-shrink: 0;
   background-color: var(--black);
   background-image: linear-gradient(
@@ -72,10 +73,17 @@
     fill var(--transition-timing) var(--transition-function);
 }
 
-@media screen and (min-width: 374px) {
+.hero-section {
+  max-width: 335px;
+  margin: 0 auto;
+  margin-top: 88px;
+}
+
+@media screen and (max-width: 375px) {
   .hero-section {
-    max-width: 335px;
+    min-width: 335px;
     margin: 0 auto;
+    margin-top: 88px;
   }
 }
 
@@ -83,6 +91,7 @@
   .hero-section {
     max-width: 704px;
     margin: 0 auto;
+    margin-top: 112px;
 
     border-radius: 30px;
     background-image: linear-gradient(
@@ -127,6 +136,7 @@
   .hero-section {
     max-width: 1156px;
     margin: 0 auto;
+    margin-top: 100px;
     border-radius: 30px;
     background-image: linear-gradient(
         57deg,

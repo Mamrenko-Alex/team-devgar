@@ -15,11 +15,11 @@
   letter-spacing: -0.02em;
 }
 
-.about-title-underline {
+.title-underline {
   position: relative;
 }
 
-.about-title-underline::after {
+.title-underline::after {
   content: ' ';
   position: absolute;
   display: block;
@@ -105,7 +105,7 @@
     line-height: 1.2;
   }
 
-  .about-title-underline::after {
+  .title-underline::after {
     height: 16px;
   }
 
