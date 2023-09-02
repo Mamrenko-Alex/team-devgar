@@ -30,6 +30,7 @@
   border-radius: 8px;
   background: var(--accent-color);
 }
+
 .reviews__content {
   color: var(--transparent-black);
   line-height: 1.71;

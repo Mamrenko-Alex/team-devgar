@@ -1,10 +1,3 @@
-a {
-  text-decoration: none;
-}
-link {
-  text-decoration: none;
-}
-
 .js-menu-container {
   display: none;
   z-index: 999;
@@ -81,6 +74,7 @@ link {
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
+
 .mobile-menu .nav-list-link a {
   color: white;
   font-family: var(--primary-font);
@@ -114,6 +108,7 @@ link {
 
   text-align: center;
 }
+
 .mobile-menu .nav-list-link .link:hover::after,
 .mobile-menu .nav-list-link .link:focus::after {
   content: '';
@@ -155,8 +150,6 @@ link {
   }
 }
 
-@media screen and (min-width: 1280px) {
-}
 .burger-adress {
   display: flex;
   flex-direction: column;
@@ -183,9 +176,11 @@ link {
   color: #2e2f42;
   text-decoration: none;
 }
+
 .is-close {
   display: none;
 }
+
 /* ////////////////////////////// */
 @media (min-width: 375px) {
   .burger-list-phone {

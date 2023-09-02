@@ -27,12 +27,15 @@
   font-style: normal;
   font-weight: 700;
 }
+
 .logo-english {
   color: var(--black);
 }
+
 .logo-exellence {
   color: var(--green);
 }
+
 .social-icons ul {
   display: flex;
   justify-content: space-between;
@@ -46,10 +49,12 @@
 .nav-list {
   display: inline-flex;
 }
+
 .nav.list .link {
   display: block;
   align-items: center;
 }
+
 .social-list {
   display: flex;
   gap: 12px;
@@ -71,6 +76,7 @@
   line-height: 18px;
   color: var(--black);
 }
+
 .social-list-icon {
   display: flex;
   justify-content: center;
@@ -78,6 +84,7 @@
   padding: 8px;
   transition: fill var(--transition-timing) var(--transition-function);
 }
+
 .nav-list-link:not(:last-child) {
   margin-right: 20px;
 }

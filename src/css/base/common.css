@@ -10,9 +10,11 @@ body {
 .anchor {
   cursor: pointer;
 }
+
 header {
   background-color: white;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,12 +27,6 @@ header {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* .container {
-  min-width: 335px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-} */
 
 @media screen and (max-width: 374px) {
   .container {
@@ -58,6 +54,7 @@ header {
     margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;

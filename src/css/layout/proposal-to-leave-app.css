@@ -80,6 +80,7 @@
   text-align: left;
   margin-bottom: 20px;
 }
+
 .proposal_text {
   font-size: 14px;
   font-weight: 700;
@@ -90,16 +91,19 @@
   margin-left: 8px;
   max-width: 87%;
 }
+
 .proposal_list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-bottom: 20px;
 }
+
 .proposal_list_item {
   display: flex;
   align-items: center;
 }
+
 .proposal_button {
   cursor: pointer;
   background-color: var(--green);
@@ -111,6 +115,7 @@
   transition: background-color var(--transition-timing)
     var(--transition-function);
 }
+
 .proposal_link {
   color: var(--white);
   font-size: 14px;
