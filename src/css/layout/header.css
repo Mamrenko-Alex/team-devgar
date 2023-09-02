@@ -1,4 +1,3 @@
-
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -9,16 +8,8 @@
   width: 1px;
 }
 
-/* .section-headr {
-  max-width: 375px;
-  margin: 0 auto;
-} */
-
-
-    
-    .header {
-   /* width: 100%;  */
- position: fixed;
+.header {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -28,7 +19,7 @@
   justify-content: space-between;
   background-color: white;
   padding: 20px;
-} 
+}
 
 .logo {
   font-family: Manrope;
@@ -94,19 +85,18 @@
   fill: var(--green);
 }
 
-
 .nav-list-link .link:hover::after,
 .nav-list-link .link:focus::after,
 .nav-list-link .link a:visited::after,
 .nav-list-link .link:active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 37px;
-    height: 2px;
-    background-color: var(--green);
-} 
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
+}
 
 .nav-link-header {
   display: block;
@@ -114,7 +104,6 @@
   padding-bottom: 4px;
   overflow: hidden;
 }
-
 
 /* Slide in */
 .nav-link-header::after {
@@ -139,7 +128,6 @@
   transform: translate3d(0, 0, 0);
 }
 /* Slide in */
-
 
 @media screen and (max-width: 374px) {
   .header {
@@ -175,14 +163,6 @@
     margin: 0 auto;
   }
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 374px) {
   .container.header {

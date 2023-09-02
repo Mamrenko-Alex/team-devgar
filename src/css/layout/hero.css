@@ -73,9 +73,15 @@
     fill var(--transition-timing) var(--transition-function);
 }
 
-@media screen and (min-width: 374px) {
+.hero-section {
+  max-width: 335px;
+  margin: 0 auto;
+  margin-top: 88px;
+}
+
+@media screen and (max-width: 375px) {
   .hero-section {
-    max-width: 335px;
+    min-width: 335px;
     margin: 0 auto;
     margin-top: 88px;
   }

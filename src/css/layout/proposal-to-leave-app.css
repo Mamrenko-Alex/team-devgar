@@ -141,6 +141,10 @@
     padding: 80px 16px;
   }
 
+  .proposal_container {
+    min-width: 303px;
+  }
+
   .card_front,
   .card_back,
   .card_mid {
