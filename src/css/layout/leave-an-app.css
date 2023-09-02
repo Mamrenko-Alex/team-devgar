@@ -2,13 +2,6 @@
   padding-top: 80px;
 }
 
-.application-form-container {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .application-form-title {
   text-align: center;
   margin-bottom: 14px;
@@ -34,7 +27,7 @@
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   margin-bottom: 40px;
 }
 
@@ -76,13 +69,40 @@
 }
 
 .form-choose-teacher {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
   border: 0;
 }
 
-.form-choose-teacher-wrapper {
+.radio-btn-icon {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  padding: 3px;
+  fill: transparent;
+  transition: fill var(--transition-timing) var(--transition-function),
+    border-color var(--transition-timing) var(--transition-function);
+}
+
+.custom-radio-btn {
+  appearance: none;
+  position: absolute;
+}
+
+.custom-radio-btn:checked + .radio-btn-icon {
+  fill: var(--green);
+  border-color: var(--green);
+}
+
+.form-choose-teacher-label-radio-btn {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  cursor: pointer;
 }
 
 .form-choose-teacher-title {
@@ -94,63 +114,10 @@
   color: var(--black, #121417);
 }
 
-.form-choose-teacher-label {
-  display: inline-block;
-  margin-left: 9px;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: -0.02em;
-  color: var(--black);
-}
-
-input[type='radio'],
-label {
-  cursor: pointer;
-}
-
-input[type='radio'] {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-}
-
-input[type='radio']::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid var(--green);
-}
-
-input[type='radio']:checked::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: var(--green);
-  transform: translate(-50%, -50%);
-  visibility: visible;
-}
-
 .form-submit-btn {
   display: flex;
-  max-width: 335px;
   width: 100%;
+  height: 50px;
   padding: 14px 0;
   justify-content: center;
   align-items: center;
@@ -181,33 +148,49 @@ input[type='radio']:checked::after {
 }
 
 .form-submit-policy-link {
+  color: var(--transparent-black);
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-field {
+  max-height: 50px;
 }
 
 @media screen and (min-width: 768px) {
+  .form-comment {
+    margin-bottom: 8px;
+  }
   .application-form-section {
     padding-top: 100px;
   }
 
+  .form-field {
+    max-height: 56px;
+  }
+
   .application-form-title {
-    position: relative;
     font-size: 40px;
     line-height: 1.2;
     margin-bottom: 16px;
     font-weight: 700;
   }
 
-  .application-form-title::after {
-    content: '';
-    display: block;
+  .title-underline {
+    position: relative;
+  }
+
+  .title-underline::after {
+    content: ' ';
     position: absolute;
-    right: 163px;
-    top: 28px;
-    width: 208px;
-    height: 20px;
-    border-radius: 8px;
-    background-color: var(--accent-color);
+    display: block;
     z-index: -1;
+    top: 65%;
+    right: 0;
+    width: 100%;
+    height: 12px;
+    border-radius: 8px;
+    background: var(--accent-color);
   }
 
   .application-form-instruction {
@@ -237,7 +220,11 @@ input[type='radio']:checked::after {
     line-height: 1.5;
   }
 
-  .form-choose-teacher-wrapper {
+  .form-field-comment {
+    height: 104px;
+  }
+
+  .form-choose-teacher {
     flex-direction: row;
     gap: 16px;
   }
@@ -248,8 +235,7 @@ input[type='radio']:checked::after {
     line-height: 1.2;
   }
 
-  .form-choose-teacher-label {
-    margin-left: 8px;
+  .form-choose-teacher-label-radio-btn {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
@@ -258,6 +244,7 @@ input[type='radio']:checked::after {
   .form-submit-btn {
     min-width: 100%;
     padding: 16px 0;
+    height: 60px;
     font-size: 18px;
     line-height: 1.56;
   }
@@ -269,24 +256,24 @@ input[type='radio']:checked::after {
 }
 
 @media screen and (min-width: 1280px) {
-  .application-form-container {
+  .container.application-form-container {
     padding-left: 128px;
     padding-right: 128px;
+  }
+
+  .form-comment {
+    padding-bottom: 8px;
   }
 
   .application-form-section {
     padding-top: 150px;
   }
 
-  .application-form-title::after {
-    right: 323px;
-  }
-
   .application-form-instruction {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 64px;
-    width: 586px;
+    width: 709px;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.67;
@@ -300,14 +287,13 @@ input[type='radio']:checked::after {
   .application-form-intro {
     display: block;
     overflow: hidden;
-    flex-basis: calc((100% - 32px) / 2);
+    max-width: 492px;
     border-radius: 30px;
     background-color: var(--green);
-    padding: 0 0 40px;
   }
 
   .application-form-intro img {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   .application-form-intro-title {
@@ -332,8 +318,6 @@ input[type='radio']:checked::after {
 
   .application-form-intro-text {
     text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--transparent-white);
   }
 
@@ -353,24 +337,6 @@ input[type='radio']:checked::after {
   .form-field-comment {
     font-size: 16px;
     line-height: 1.5;
-  }
-
-  .form-choose-teacher-wrapper {
-    flex-direction: row;
-    gap: 16px;
-  }
-
-  .form-choose-teacher-title {
-    margin-bottom: 16px;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-
-  .form-choose-teacher-label {
-    margin-left: 8px;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: -0.02em;
   }
 
   .form-submit-btn {
