@@ -1,22 +1,9 @@
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
 
-a {
-    text-decoration: none;
-    
-}
  .header {
     position: fixed;
     top: 0;
   width: 100%;
-  z-index: 50;
+  z-index: 10;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -24,7 +11,7 @@ a {
         padding: 20px;
       }
      
-
+    
       .logo{
 
           font-family: Manrope;
@@ -92,7 +79,9 @@ padding: 8px;
 }
 
 .nav-list-link .link:hover::after,
-.nav-list-link .link:focus::after {
+.nav-list-link .link:focus::after,
+.nav-list-link .link a:visited::after,
+.nav-list-link .link:active::after {
     content: "";
     position: absolute;
     left: 0;

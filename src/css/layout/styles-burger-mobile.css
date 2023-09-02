@@ -6,6 +6,7 @@ link{
 }
 .js-menu-container{
     display:none;
+    z-index: 999;
 }
 .menu-container {
     position: fixed;
@@ -24,6 +25,8 @@ link{
 
 .menu-container.is-open {
   transform: translateX(0);
+
+  z-index: 100;
 }
 
 .nav-button{
@@ -51,6 +54,21 @@ link{
 }
 
 
+.backdrop {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color:rgba(18, 20, 23, 0.40);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container .js-menu-container .is-open{
+  z-index: 50;
+}
 
 .burger-list{
   gap:20;
