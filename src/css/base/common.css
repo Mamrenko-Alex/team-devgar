@@ -26,10 +26,16 @@ header{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* .container {
+  min-width: 335px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+} */
 
 @media screen and (max-width: 374px) {
   .container {
-    max-width: 335px;
+    min-width: 335px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
