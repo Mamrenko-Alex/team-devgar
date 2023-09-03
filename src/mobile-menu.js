@@ -37,3 +37,23 @@
   //   bodyBg.classList.toggle("visually-hidden");
   // }
 })();
+
+// no scroll
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.js-open-menu').forEach(trigger => {
+    trigger.addEventListener('click', function () {
+      document
+        .querySelectorAll('body')
+        .forEach(target => target.classList.add('no-scroll'));
+    });
+  });
+
+  document.querySelectorAll('.js-close-menu').forEach(trigger => {
+    trigger.addEventListener('click', function () {
+      document
+        .querySelectorAll('body')
+        .forEach(target => target.classList.remove('no-scroll'));
+    });
+  });
+});
