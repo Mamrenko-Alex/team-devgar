@@ -41,7 +41,7 @@
 
 .reviews__card {
   width: 100%;
-  height: auto;
+  min-height: 278px;
   padding: 20px 20px 40px 20px;
   border-radius: 16px;
   background-color: var(--gray);
@@ -98,6 +98,7 @@
 
   .reviews__card {
     width: 100%;
+    min-height: 278px;
   }
 
   .reviews__content {
