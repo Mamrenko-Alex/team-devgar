@@ -1,2 +1,2 @@
-import './utils/reviews-swiper.js';
+import './js/utils/reviews-swiper';
 import './js/modal-footer.js';
