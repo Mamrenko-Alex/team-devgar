@@ -17,11 +17,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/team-devgar/assets/index-e2b3efda.js"></script>
-    <link rel="stylesheet" href="/team-devgar/assets/index-0c05549d.css">
+    <script type="module" crossorigin src="/team-devgar/assets/index-f3d97aa6.js"></script>
+    <link rel="stylesheet" href="/team-devgar/assets/index-2ba871fc.css">
   </head>
   <body>
-    <header class="section-headr container">
+    <header>
+      <header class="section-headr container">
   <div class="header">
     <a href="./index.html" class="page-nav-logo">
       <span class="logo logo-english"> english</span
@@ -109,8 +110,10 @@
   </div>
 </header>
 
+    </header>
 
-    <section class="section hero-section" id="hero">
+    <main>
+      <section class="section hero-section" id="hero">
   <div class="container hero-container">
     <h1 class="hero-header">
       Discover the joy of learning
@@ -128,7 +131,7 @@
 </section>
 
 
-    <section class="about-section" id="about-us">
+      <section class="about-section" id="about-us">
   <div class="container">
     <h2 class="about-title">About <span class="title-underline">Us</span></h2>
     <p class="about-text">
@@ -163,7 +166,7 @@
 </section>
 
 
-    <section class="lessons-container" id="our-lessons">
+      <section class="lessons-container" id="our-lessons">
   <div class="container">
     <h2 class="lessons-title">
       Our <span class="title-underline">lessons</span>
@@ -221,7 +224,7 @@
 </section>
 
 
-    <section class="proposal_section" id="proposal-to-leave-app">
+      <section class="proposal_section" id="proposal-to-leave-app">
   <div class="proposal_container">
     <h2 class="visually-hidden">Proposal to sign up for lessons</h2>
     <p class="proposal_cta">
@@ -277,7 +280,7 @@
 </section>
 
 
-    <section class="teachers-section" id="our-techers">
+      <section class="teachers-section" id="our-techers">
   <div class="container teachers-container">
     <h2 class="teachers-section__title title">
       Meet our <span class="title-underline">teachers</span>
@@ -290,10 +293,12 @@
       <li class="card">
         <picture>
           <source
+            class="teacher-photo"
             srcset="/team-devgar/assets/maria-be5a17db.png 1x, /team-devgar/assets/maria@2x-bfd23a65.png 2x"
-            type="image/jpeg"
+            type="image/png"
           />
           <source
+            class="teacher-photo"
             srcset="data:image/webp;base64,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 1x, /team-devgar/assets/maria@2x-dcc7105b.webp 2x"
             type="image/webp"
           />
@@ -389,7 +394,7 @@
 </section>
 
 
-    <section class="application-form-section" id="leave-an-app">
+      <section class="application-form-section" id="leave-an-app">
   <div class="container application-form-container">
     <h2 class="application-form-title title">
       Leave an <span class="title-underline">application</span>
@@ -527,7 +532,7 @@
 </section>
 
 
-    <section class="reviews" id="reviews">
+      <section class="reviews" id="reviews">
   <div class="container reviews-container">
     <h2 class="reviews__title">
       What our <span class="title-underline">students</span> say
@@ -619,8 +624,10 @@
   </div>
 </section>
 
+    </main>
 
-    <footer class="footer" id="footer">
+    <footer>
+      <footer class="footer" id="footer">
   <div class="container footer_container">
     <div class="top-wrapper">
       <div class="footer_wrapper">
@@ -773,6 +780,7 @@
   </div>
 </footer>
 
+    </footer>
 
     <!-- MODAL-->
 <div class="backdrop is-hidden" data-modal>
@@ -981,10 +989,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- <script
-      type="module"
-      src="../node_modules/body-scroll-lock/lib/bodyScrollLock.js"
-    ></script> -->
+    
     
     
     
