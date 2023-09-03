@@ -12,10 +12,10 @@
     mobileMenu.classList.toggle('is-open');
     bodyBg.classList.toggle("visually-hidden");
 
-    // const scrollLockMethod = !isMenuOpen
-    //   ? 'disableBodyScroll'
-    //   : 'enableBodyScroll';
-    // bodyScrollLock[scrollLockMethod](document.body);
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -49,15 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.querySelectorAll('.modal-close-btn').forEach(trigger => {
-    trigger.addEventListener('click', function () {
-      document
-        .querySelectorAll('body')
-        .forEach(target => target.classList.remove('no-scroll'));
-    });
-  });
-
-  document.querySelectorAll('.backdrop').forEach(trigger => {
+  document.querySelectorAll('.js-close-menu').forEach(trigger => {
     trigger.addEventListener('click', function () {
       document
         .querySelectorAll('body')
