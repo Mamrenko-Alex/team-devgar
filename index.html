@@ -17,12 +17,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
     <script type="module" crossorigin src="/team-devgar/assets/index-510b7d0f.js"></script>
     <link rel="stylesheet" href="/team-devgar/assets/index-0c05549d.css">
   </head>
@@ -294,12 +288,22 @@
     </p>
     <ul class="cards-wrapper">
       <li class="card">
-
-        <picture  >
-          <source media="(min-width: 768px)" srcset="/team-devgar/assets/maria@2x-bfd23a65.png 2x">
-          <source src="/team-devgar/assets/maria-be5a17db.png">
-          <img class="teacher-photo" src="/team-devgar/assets/maria-be5a17db.png" alt="Maria photo" style="width:auto;" >
-       </picture>
+        <picture>
+          <source
+            srcset="/team-devgar/assets/maria-be5a17db.png 1x, /team-devgar/assets/maria@2x-bfd23a65.png 2x"
+            type="image/jpeg"
+          />
+          <source
+            srcset="data:image/webp;base64,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 1x, /team-devgar/assets/maria@2x-dcc7105b.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="teacher-photo"
+            src="/team-devgar/assets/maria-be5a17db.png"
+            alt="Maria photo"
+            style="width: auto"
+          />
+        </picture>
         <h3 class="title">Maria</h3>
         <p class="about-techer">
           A seasoned linguist and our primary specialist in beginner-level
@@ -307,14 +311,23 @@
         </p>
       </li>
       <li class="card">
+        <picture>
+          <source
+            srcset="/team-devgar/assets/artem-24818a4f.png 1x, /team-devgar/assets/artem@2x-5832ea2f.png 2x"
+            type="image/jpeg"
+          />
+          <source
+            srcset="data:image/webp;base64,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 1x, /team-devgar/assets/artem@2x-87a3472b.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="teacher-photo"
+            src="/team-devgar/assets/artem-24818a4f.png"
+            alt="Artem photo"
+            style="width: auto"
+          />
+        </picture>
 
-        <picture  >
-          <source media="(min-width: 768px)" srcset="/team-devgar/assets/artem@2x-5832ea2f.png 2x">
-          <source  src="/team-devgar/assets/artem-24818a4f.png">
-          <img class="teacher-photo" src="/team-devgar/assets/artem-24818a4f.png" alt="Artem photo" style="width:auto;" >
-       </picture>
-
-  
         <h3 class="title">Artem</h3>
         <p class="about-techer">
           With his innovative teaching techniques and a focus on interactive
@@ -322,13 +335,23 @@
         </p>
       </li>
       <li class="card">
+        <picture>
+          <source
+            srcset="/team-devgar/assets/ilona-15090a9a.png 1x, /team-devgar/assets/ilona@2x-8d76f64d.png 2x"
+            type="image/jpeg"
+          />
+          <source
+            srcset="data:image/webp;base64,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 1x, /team-devgar/assets/ilona@2x-3863657c.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="teacher-photo"
+            src="/team-devgar/assets/ilona-15090a9a.png"
+            alt="Ilona photo"
+            style="width: auto"
+          />
+        </picture>
 
-        <picture  >
-          <source media="(min-width: 768px)" srcset="/team-devgar/assets/ilona@2x-8d76f64d.png 2x">
-          <source  src="/team-devgar/assets/ilona-15090a9a.png">
-          <img class="teacher-photo" src="/team-devgar/assets/ilona-15090a9a.png" alt="Ilona photo" style="width:auto;" >
-       </picture>
-    
         <h3 class="title">Ilona</h3>
         <p class="about-techer">
           A specialist in advanced English, Ilona provides intensive
@@ -337,13 +360,23 @@
         </p>
       </li>
       <li class="card">
+        <picture>
+          <source
+            srcset="/team-devgar/assets/volodymyr-b650fdd5.png 1x, /team-devgar/assets/volodymyr@2x-758694ea.png 2x"
+            type="image/jpeg"
+          />
+          <source
+            srcset="data:image/webp;base64,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 1x, /team-devgar/assets/volodymyr@2x-93152aaa.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="teacher-photo"
+            src="/team-devgar/assets/volodymyr-b650fdd5.png"
+            alt="Volodymyr photo"
+            style="width: auto"
+          />
+        </picture>
 
-        <picture  >
-          <source media="(min-width: 768px)" srcset="/team-devgar/assets/volodymyr@2x-758694ea.png 2x">
-          <source src="/team-devgar/assets/volodymyr-b650fdd5.png">
-          <img class="teacher-photo" src="/team-devgar/assets/volodymyr-b650fdd5.png" alt="Volodymyr photo" style="width:auto;" >
-       </picture>
-       
         <h3 class="title">Volodymyr</h3>
         <p class="about-techer">
           Our expert in English for specific purposes, Volodymyr tailors his
