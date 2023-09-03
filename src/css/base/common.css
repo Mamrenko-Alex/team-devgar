@@ -7,6 +7,10 @@ body {
   background-color: var(--white);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .anchor {
   cursor: pointer;
 }
