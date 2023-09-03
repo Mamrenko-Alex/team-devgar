@@ -11,11 +11,15 @@
 
     <div class="application-form-wrapper">
       <div class="application-form-intro">
-        <img
-          srcset="./img/other/leave-an-application@2x.png 2x"
-          src="./img/other/leave-an-application.png"
-          alt="Student image"
-        />
+
+        <picture  >
+          <source srcset="./img/other-webp/leave-an-application.webp 1x, ./img/other-webp/leave-an-application@2x.webp 2x" type="image/webp">
+          <source srcset="./img/other/leave-an-application.png 1x, ./img/other/leave-an-application@2x.png 2x" type="image/png">
+          <img  src="./img/other/leave-an-application.png"  alt="Student image" style="width:auto;" >
+        </picture>
+       
+
+      
 
         <p class="application-form-intro-title">1000</p>
         <p class="application-form-intro-text">
