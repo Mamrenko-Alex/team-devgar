@@ -147,6 +147,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .about-section {
+    padding-bottom: 80px;
+  }
+
   .wrap-about-list {
     display: flex;
     column-gap: 32px;

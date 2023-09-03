@@ -243,6 +243,9 @@
 /* __________________________
 */
 @media screen and (min-width: 1280px) {
+  .proposal_section {
+    padding-bottom: 70px;
+  }
   .proposal_container {
     max-width: 1152px;
     padding-bottom: 143px;
