@@ -212,7 +212,7 @@
 
   .lessons-subtitle {
     font-size: 18px;
-    padding: 0 137px;
+    max-width: 665px;
     margin: 0 auto;
   }
 
