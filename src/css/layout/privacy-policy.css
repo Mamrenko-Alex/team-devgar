@@ -1,0 +1,132 @@
+.section-privacy {
+  padding: 80px 0;
+}
+
+.header-policy-1 {
+  color: var(--black);
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.header-policy-2 {
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.header-policy-3 {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.text-policy {
+  color: var(--transparent-black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  padding-bottom: 20px;
+}
+
+.text-privacy-down {
+  color: var(--black);
+  font-weight: 600;
+  line-height: 1.28;
+  padding-bottom: 20px;
+}
+
+.print-doc {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 120px;
+}
+
+.print-button {
+  display: flex;
+  padding: 14px 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 295px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: var(--green);
+  margin-bottom: 20px;
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
+}
+
+.print-button:hover,
+.print-button:focus {
+  background-color: var(--focus-color);
+}
+
+.easter-egg {
+  display: none;
+}
+
+@media print {
+  .section-headr,
+  .footer,
+  .print-button {
+    display: none;
+  }
+
+  .easter-egg {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-policy-1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.16;
+  }
+
+  .header-policy-2 {
+    font-size: 40px;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .header-policy-3 {
+    font-size: 20px;
+  }
+
+  .text-policy {
+    font-size: 16px;
+  }
+
+  .text-privacy-down {
+    font-size: 14px;
+  }
+
+  .text-privacy-down {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container.container-privacy {
+    padding: 0 128px;
+  }
+
+  .section-privacy {
+    padding-bottom: 40px;
+  }
+
+  .text-privacy-down {
+    padding-bottom: 60px;
+  }
+}
