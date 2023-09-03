@@ -12,10 +12,10 @@
     mobileMenu.classList.toggle('is-open');
     bodyBg.classList.toggle("visually-hidden");
 
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    // const scrollLockMethod = !isMenuOpen
+    //   ? 'disableBodyScroll'
+    //   : 'enableBodyScroll';
+    // bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -37,3 +37,31 @@
   //   bodyBg.classList.toggle("visually-hidden");
   // }
 })();
+
+// no scroll
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.js-open-menu').forEach(trigger => {
+    trigger.addEventListener('click', function () {
+      document
+        .querySelectorAll('body')
+        .forEach(target => target.classList.add('no-scroll'));
+    });
+  });
+
+  document.querySelectorAll('.modal-close-btn').forEach(trigger => {
+    trigger.addEventListener('click', function () {
+      document
+        .querySelectorAll('body')
+        .forEach(target => target.classList.remove('no-scroll'));
+    });
+  });
+
+  document.querySelectorAll('.backdrop').forEach(trigger => {
+    trigger.addEventListener('click', function () {
+      document
+        .querySelectorAll('body')
+        .forEach(target => target.classList.remove('no-scroll'));
+    });
+  });
+});
