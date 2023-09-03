@@ -21,7 +21,7 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
-  burgerLinks.forEach((burgerIteam)=> {
+  burgerLinks?.forEach((burgerIteam)=> {
     burgerIteam.addEventListener('click', toggleMenu)
   })
 
