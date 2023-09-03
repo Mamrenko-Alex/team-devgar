@@ -21,12 +21,12 @@
         </li>
       </ol>
       <div class="wrap-about-img">
-        <img
-          class="about-img"
-          srcset="./img/other/memoji@2x.png 2x"
-          src="./img/other/memoji.png"
-          alt="teacher"
-        />
+        <picture  class="about-img">
+          <source media="(min-width: 768px)" srcset="./img/other/memoji@2x.png 2x">
+          <source  src="./img/other/memoji.png">
+          <img class="about-img"  src="./img/other/memoji.png" alt="teacher" style="width:auto;" >
+       </picture>
+       
       </div>
     </div>
   </div>

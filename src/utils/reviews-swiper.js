@@ -1,6 +1,6 @@
-import Swiper  from "swiper";
+import Swiper from "swiper";
 const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
+  direction: 'horizontal', 
   loop: true,
   pagination: {
     el: '.swiper-pagination',
