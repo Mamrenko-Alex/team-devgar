@@ -92,6 +92,9 @@
 .wrap-about-img {
   border-radius: 30px;
   background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-img {
